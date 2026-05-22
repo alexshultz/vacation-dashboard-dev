@@ -10490,6 +10490,30 @@
       "visible": false
     },
     {
+      "slug": "smallin-civil-war-cave",
+      "name": "Smallin Civil War Cave",
+      "description": "A stair-free, half-mile guided cave tour just north of Branson near Ozark, MO -- accessible for strollers, wheelchairs, and mobility scooters. Listed on the National Register of Historic Places, the cave has a rich history spanning Native American use, early settlers, and Civil War activity. One-hour tours led by guides covering geology, history, and folklore. For the adventurous: a 'Wild Tour' goes off the main trail, wading through 54-degree water and climbing over rimstone dams. Open Mon-Sat 9:30am-5pm, Sun 1-5pm.",
+      "tags": [
+        "nature",
+        "educational",
+        "family",
+        "indoor",
+        "1-2hr",
+        "cave",
+        "history",
+        "accessible"
+      ],
+      "price_adult": 33.95,
+      "rating": 4.6,
+      "official_url": "https://www.smallincave.com",
+      "address": "3575 N Smallin Road, Ozark, MO 65721",
+      "drive": "35 min",
+      "distance_miles": 30,
+      "image": "assets/thumbs/smallin-civil-war-cave-thumb.jpg",
+      "visible": true,
+      "sort_key": "smallin civil war cave"
+    },
+    {
       "slug": "dickson-smoke-barrel-tavern",
       "name": "Smoke & Barrel Tavern (Dickson St)",
       "category": "attraction",
