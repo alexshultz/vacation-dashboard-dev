@@ -1471,7 +1471,8 @@
         "family",
         "active",
         "day-trip",
-        "1-2hr"
+        "1-2hr",
+        "cave"
       ],
       "drive": "3h 13min",
       "sort_key": "blanchard springs caverns",
@@ -2533,7 +2534,8 @@
         "indoor",
         "family",
         "1-2hr",
-        "day-trip"
+        "day-trip",
+        "cave"
       ],
       "drive": "2h 32min",
       "sort_key": "bridal cave & thunder mountain park",
@@ -3550,7 +3552,8 @@
         "educational",
         "indoor",
         "family",
-        "1-2hr"
+        "1-2hr",
+        "cave"
       ],
       "drive": "55 min",
       "sort_key": "cosmic cavern",
@@ -4828,7 +4831,8 @@
         "family",
         "indoor",
         "1-2hr",
-        "day-trip"
+        "day-trip",
+        "cave"
       ],
       "drive": "1h 24min",
       "sort_key": "fantastic caverns",
@@ -6804,7 +6808,8 @@
         "outdoor",
         "family",
         "1-2hr",
-        "free"
+        "free",
+        "cave"
       ],
       "drive": "38 min",
       "sort_key": "lost canyon cave and nature trail",
@@ -11077,7 +11082,8 @@
         "educational",
         "family",
         "indoor",
-        "1-2hr"
+        "1-2hr",
+        "cave"
       ],
       "drive": "20 min",
       "sort_key": "talking rocks cavern",
