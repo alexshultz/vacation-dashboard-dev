@@ -297,12 +297,12 @@ function TimelinePage({ state, dispatch }) {
                   style={{ top, height, ...positional }}
                   role={clickable ? 'button' : undefined}
                   tabIndex={clickable ? 0 : undefined}
-                  onClick={clickable ? () => dispatch({ type: 'openDetail', id: ev.activityId }) : undefined}
+                  onClick={clickable ? () => dispatch({ type: 'openDetail', id: ev.activityId, list: [ev.activityId] }) : undefined}
                   onKeyDown={(e) => {
                     if (!clickable) return;
                     if (e.key === 'Enter' || e.key === ' ') {
                       e.preventDefault();
-                      dispatch({ type: 'openDetail', id: ev.activityId });
+                      dispatch({ type: 'openDetail', id: ev.activityId, list: [ev.activityId] });
                     }
                   }}
                 >

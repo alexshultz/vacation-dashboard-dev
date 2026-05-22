@@ -47,12 +47,12 @@ function HomePage({ state, dispatch }) {
                 className={`event-row ${surfaceMod}`}
                 role={ev.activityId ? 'button' : undefined}
                 tabIndex={ev.activityId ? 0 : undefined}
-                onClick={() => ev.activityId && dispatch({ type: 'openDetail', id: ev.activityId })}
+                onClick={() => ev.activityId && dispatch({ type: 'openDetail', id: ev.activityId, list: [ev.activityId] })}
                 onKeyDown={(e) => {
                   if (!ev.activityId) return;
                   if (e.key === 'Enter' || e.key === ' ') {
                     e.preventDefault();
-                    dispatch({ type: 'openDetail', id: ev.activityId });
+                    dispatch({ type: 'openDetail', id: ev.activityId, list: [ev.activityId] });
                   }
                 }}
               >
