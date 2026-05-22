@@ -2261,6 +2261,28 @@
       "visible": true
     },
     {
+      "slug": "branson-offroad-utv-rentals",
+      "name": "Branson Offroad UTV Rentals",
+      "description": "Polaris 2-seat and 4-seat UTV rentals right in Branson near Hwy 76. Rent a side-by-side and explore the Ozark hills at your own pace. More of a \"grab a machine and go\" outfit than a structured trail park -- pair it with nearby forest roads or TexPlex for a full day out. Good option if your group wants flexibility without a guided tour.",
+      "tags": [
+        "outdoor",
+        "active",
+        "adventure",
+        "atv",
+        "family",
+        "1-2hr"
+      ],
+      "price_adult": null,
+      "rating": 4.2,
+      "official_url": "https://branson-off-road.webflow.io",
+      "address": "Branson, MO (Hwy 76 area)",
+      "drive": "19 min",
+      "distance_miles": 9,
+      "image": "assets/thumbs/branson-offroad-utv-rentals-thumb.jpg",
+      "visible": true,
+      "sort_key": "branson offroad utv rentals"
+    },
+    {
       "slug": "branson-scenic-railway",
       "name": "Branson Scenic Railway",
       "category": "attraction",
@@ -5936,6 +5958,29 @@
       "visible": true
     },
     {
+      "slug": "hog-wild-adventures",
+      "name": "Hog Wild Adventures",
+      "description": "Guided Can-Am Maverick side-by-side UTV tours on a private 1,100-acre Ozark ranch in Omaha, AR, about 30 minutes south of Branson on Hwy 65. Professional local guides lead you on 10.4 miles of trail with steep climbs, creek crossings, and panoramic ridge views. All skill levels welcome -- you drive, they guide. Tours run on a fixed schedule; book ahead via their Peek.com booking system. Partners with BRP Experiences.",
+      "tags": [
+        "outdoor",
+        "active",
+        "nature",
+        "adventure",
+        "atv",
+        "guided",
+        "1-2hr"
+      ],
+      "price_adult": 89.0,
+      "rating": 4.7,
+      "official_url": "https://hogwildbranson.com",
+      "address": "14552 Old Springfield Rd N, Omaha, AR 72662",
+      "drive": "51 min",
+      "distance_miles": 27,
+      "image": "assets/thumbs/hog-wild-adventures-thumb.jpg",
+      "visible": true,
+      "sort_key": "hog wild adventures"
+    },
+    {
       "slug": "hollywood-wax-museum-entertainment-center",
       "name": "Hollywood Wax Museum Entertainment Center",
       "category": "attraction",
@@ -8151,6 +8196,28 @@
       "image": "assets/thumbs/ozark-mountain-trail-rides-thumb.jpg",
       "visible": true,
       "sort_key": "ozark mountain trail rides"
+    },
+    {
+      "slug": "ozark-off-road-atv-adventure",
+      "name": "Ozark Off-Road ATV Adventure",
+      "description": "1-hour guided ATV tour through the Ozark hills on the Shepherd of the Hills homestead property, right on 76 Country Blvd in Branson. You drive an ATV or UTV while a guide leads you through the terrain -- solo or with passengers depending on vehicle. Meets at Inspiration Tower. Book via Viator. Closest structured ATV experience to the strip.",
+      "tags": [
+        "outdoor",
+        "active",
+        "adventure",
+        "atv",
+        "guided",
+        "1-2hr"
+      ],
+      "price_adult": null,
+      "rating": 4.4,
+      "official_url": "https://www.viator.com/tours/Branson/Ozark-Off-Road-ATV-Adventure/d5235-67321P2",
+      "address": "5586 W Hwy 76, Branson, MO 65616",
+      "drive": "14 min",
+      "distance_miles": 6,
+      "image": "assets/thumbs/ozark-off-road-atv-adventure-thumb.jpg",
+      "visible": true,
+      "sort_key": "ozark off-road atv adventure"
     },
     {
       "slug": "sdc-ozark-pottery",
@@ -11283,6 +11350,29 @@
       "drive": "19 min",
       "sort_key": "texas tenors",
       "visible": true
+    },
+    {
+      "slug": "texplex-fox-creek-park",
+      "name": "TexPlex at Fox Creek Park",
+      "description": "Purpose-built off-road park in Hollister, just south of Branson, purpose-built for ATVs, UTVs, side-by-sides, motorcycles, and dirt bikes. Bring your own machine (day pass $40/machine + driver, $5/extra passenger) or rent a Can-Am Commander UTV on site (2hr $265, 3hr $365, 4hr $445 per UTV). No reservations needed for day passes -- walk up and ride. UTV rentals strongly recommended to book ahead. Open most days 8am-7pm; closed some weekdays for trail maintenance.",
+      "tags": [
+        "outdoor",
+        "active",
+        "adventure",
+        "atv",
+        "family",
+        "1-2hr",
+        "all-day"
+      ],
+      "price_adult": 40.0,
+      "rating": 4.5,
+      "official_url": "https://texplexfoxcreek.com",
+      "address": "Fox Creek Park, Hollister, MO 65672",
+      "drive": "39 min",
+      "distance_miles": 16,
+      "image": "assets/thumbs/texplex-fox-creek-park-thumb.jpg",
+      "visible": true,
+      "sort_key": "texplex at fox creek park"
     },
     {
       "slug": "thank-you-for-the-music-abba-tribute",
