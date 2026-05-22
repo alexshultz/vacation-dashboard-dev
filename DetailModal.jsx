@@ -198,12 +198,10 @@ function ActivityDetailModal({
                     data-panel={panel}
                     data-id={id || undefined}
                     aria-hidden={panel !== 'current'}
-                    style={slideWidth > 0 ? {
-                      position: 'absolute',
-                      left:     `${idx * slideWidth}px`,
-                      width:    `${slideWidth}px`,
-                      height:   '100%',
-                    } : undefined}
+                    style={slideWidth > 0
+                      ? { position: 'absolute', left: `${idx * slideWidth}px`, width: `${slideWidth}px`, height: '100%' }
+                      : { position: 'absolute', left: `${idx * 100}%`, width: '100%', height: '100%' }
+                    }
                   >
                     {act && (
                       <PaneContent
