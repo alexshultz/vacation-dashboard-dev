@@ -2270,7 +2270,8 @@
         "adventure",
         "atv",
         "family",
-        "1-2hr"
+        "1-2hr",
+        "offroad"
       ],
       "price_adult": null,
       "rating": 4.2,
@@ -5968,7 +5969,8 @@
         "adventure",
         "atv",
         "guided",
-        "1-2hr"
+        "1-2hr",
+        "offroad"
       ],
       "price_adult": 89.0,
       "rating": 4.7,
@@ -8207,7 +8209,8 @@
         "adventure",
         "atv",
         "guided",
-        "1-2hr"
+        "1-2hr",
+        "offroad"
       ],
       "price_adult": null,
       "rating": 4.4,
@@ -8779,7 +8782,8 @@
         "date-night",
         "family",
         "outdoor",
-        "ride"
+        "ride",
+        "offroad"
       ],
       "tag_meta": {
         "vocabulary_round": 8,
@@ -9939,7 +9943,8 @@
         "kid-focused",
         "nature",
         "1-2hr",
-        "all-day"
+        "all-day",
+        "offroad"
       ],
       "drive": "17 min",
       "sort_key": "shepherd of the hills adventure park",
@@ -11362,7 +11367,8 @@
         "atv",
         "family",
         "1-2hr",
-        "all-day"
+        "all-day",
+        "offroad"
       ],
       "price_adult": 40.0,
       "rating": 4.5,
