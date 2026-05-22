@@ -112,8 +112,8 @@ body {
   position: relative;
   width: 100%;
   max-width: 640px;
-  height: 92vh;
-  max-height: 92vh;
+  height: 85vh;
+  max-height: 85vh;
   display: flex;
   flex-direction: column;
   overflow: hidden;
