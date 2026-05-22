@@ -3452,6 +3452,30 @@
       "visible": true
     },
     {
+      "slug": "clydesdale-experience",
+      "name": "Clydesdale Experience & Campgrounds",
+      "description": "Hands-on Clydesdale draft horse encounter near Taneyville, about 37 miles from Branson in the Mark Twain National Forest. Far more than a trail ride -- you groom, harness, and drive a three-horse Clydesdale team yourself. Trail ride is $75/person (ages 10+). Wagon ride with meet-and-greet is $45/person (all ages). The Full Experience -- trail ride, wagon, meet-and-greet, and a branding event with chili and cornbread meal -- is $125/person. Kids under 10 can do the wagon ride and meet-and-greet. Campsite, RV hookups, and Beaver Creek swimming on site. Reservations required; book via their website.",
+      "tags": [
+        "outdoor",
+        "active",
+        "nature",
+        "family",
+        "animals",
+        "horseback",
+        "1-2hr",
+        "kids"
+      ],
+      "price_adult": 75,
+      "rating": 4.9,
+      "official_url": "https://clydesdaleexperienceandcampgrounds.com",
+      "address": "Taneyville, MO 65759",
+      "drive": "82 min",
+      "distance_miles": 37,
+      "image": "assets/thumbs/clydesdale-experience-thumb.jpg",
+      "visible": true,
+      "sort_key": "clydesdale experience & campgrounds"
+    },
+    {
       "slug": "tanger-coach",
       "name": "Coach Factory Store (Tanger Outlets)",
       "category": "attraction",
@@ -6779,6 +6803,29 @@
       "drive": "18 min",
       "sort_key": "lane bryant outlet (tanger outlets)",
       "visible": false
+    },
+    {
+      "slug": "lazy-b-ranch",
+      "name": "Lazy B Ranch Trail Rides",
+      "description": "Veteran-owned working ranch near Bradleyville offering guided horseback trail rides through breathtaking Ozark cedar glades and hills, plus cowboy campfire cookouts, hayrides, and fire-branded take-home boards. Rides run at 10:30am and 2pm in spring, summer, and fall; one daily ride at 1:30pm in winter. Riders must be at least 10 years old and under 250 lbs. Call ahead for pricing and reservations -- no published rate on their website. About 41 miles east of Branson on a scenic back-road drive.",
+      "tags": [
+        "outdoor",
+        "active",
+        "nature",
+        "family",
+        "animals",
+        "horseback",
+        "1-2hr"
+      ],
+      "price_adult": null,
+      "rating": 4.5,
+      "official_url": "https://lazybranch.com",
+      "address": "Bradleyville, MO 65676",
+      "drive": "67 min",
+      "distance_miles": 41,
+      "image": "assets/thumbs/lazy-b-ranch-thumb.jpg",
+      "visible": true,
+      "sort_key": "lazy b ranch trail rides"
     },
     {
       "slug": "sdc-leatherworks",
