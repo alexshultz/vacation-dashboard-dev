@@ -1089,6 +1089,29 @@
       "visible": true
     },
     {
+      "slug": "bear-creek-trail-rides",
+      "name": "Bear Creek Trail Rides",
+      "description": "One-hour guided horseback trail rides on the Caperton family's private 530-acre ranch, 8 miles north of Branson in Walnut Shade. Gentle, well-trained horses suitable for all skill levels. The trail crosses open pastures, winds through wooded hillsides, climbs up and down Ozark hills, and follows Bear Creek past a scenic waterfall. A genuine working ranch experience -- not a tourist facility. Operated by the same family since 1954. No website booking; call ahead to confirm availability.",
+      "tags": [
+        "outdoor",
+        "active",
+        "nature",
+        "family",
+        "animals",
+        "horseback",
+        "1-2hr"
+      ],
+      "price_adult": null,
+      "rating": 4.6,
+      "official_url": "https://bearcreektrailridesbranson.com",
+      "address": "3400 US Hwy 65, Walnut Shade, MO 65771",
+      "drive": "30 min",
+      "distance_miles": 19,
+      "image": "assets/thumbs/bear-creek-trail-rides-thumb.jpg",
+      "visible": true,
+      "sort_key": "bear creek trail rides"
+    },
+    {
       "slug": "bear-creek-winery-branson",
       "name": "Bear Creek Wine Company & Brewery",
       "category": "activity",
@@ -4138,7 +4161,8 @@
         "relaxed",
         "1-2hr",
         "all-day",
-        "hiking"
+        "hiking",
+        "horseback"
       ],
       "drive": "41 min",
       "sort_key": "dogwood canyon nature park",
@@ -8104,6 +8128,29 @@
       "drive": "19 min",
       "sort_key": "ozark mountain country store",
       "visible": true
+    },
+    {
+      "slug": "ozark-mountain-trail-rides",
+      "name": "Ozark Mountain Trail Rides",
+      "description": "One-hour guided horseback trail rides on the historic Shepherd of the Hills homestead property, right in Branson. Shaded Ozark trails make this comfortable even in summer heat. The horses are exceptionally gentle and well-trained -- and some of them actually perform in the Shepherd of the Hills outdoor drama, so you may be riding a working stage actor. Operated by the Caperton family (same as Bear Creek Trail Rides). Located next to the Old Mill Theater and Inspiration Tower.",
+      "tags": [
+        "outdoor",
+        "active",
+        "nature",
+        "family",
+        "animals",
+        "horseback",
+        "1-2hr"
+      ],
+      "price_adult": null,
+      "rating": 4.5,
+      "official_url": "https://bearcreektrailridesbranson.com",
+      "address": "6549 MO-376, Branson, MO 65616",
+      "drive": "17 min",
+      "distance_miles": 8,
+      "image": "assets/thumbs/ozark-mountain-trail-rides-thumb.jpg",
+      "visible": true,
+      "sort_key": "ozark mountain trail rides"
     },
     {
       "slug": "sdc-ozark-pottery",
