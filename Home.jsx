@@ -5,7 +5,7 @@ const { useState: useStateHome } = React;
 function HomePage({ state, dispatch }) {
   const userId = state.userId;
   const sched = window.BD_SCHEDULE;
-  const today = new Date().toISOString().slice(0, 10);
+  const today = new Date().toLocaleDateString('en-CA');
 
   function youStatus(ev) {
     if (!ev.activityId) return null;
