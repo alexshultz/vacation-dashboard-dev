@@ -299,7 +299,8 @@
       "notInterested": [],
       "noResponse": [],
       "event_type": "meal",
-      "series_slug": "supper"
+      "series_slug": "supper",
+      "sub": "Skipped -- Stampede dinner show included"
     },
     {
       "id": "sup-27",
@@ -424,6 +425,22 @@
       "event_type": "open",
       "series_slug": null,
       "sub": "Adult $38 / Child $24 -- 2hr narrated tour, ages 3+ ticketed -- SELLS OUT, book Sat 10pm"
+    },
+    {
+      "id": "dolly-stampede-may26",
+      "title": "Dolly Parton's Stampede (VIP)",
+      "date": "2026-05-26",
+      "duration": 4.5,
+      "catalogRef": "dolly-parton-s-stampede",
+      "startTime": "15:30",
+      "travelMinutes": 22,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "committed-lock",
+      "series_slug": null,
+      "sub": "Leave 3:30 -- Arrive ~3:52 -- View grounds -- VIP show 4:40 -- Ends ~8:00 -- tickets Sat 10pm"
     }
   ]
 }
