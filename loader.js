@@ -199,6 +199,18 @@
       window.BD_PEOPLE     = buildPeople(peopleData.attendees);
       window.BD_INITIAL_USER = null;
 
+      // Back-propagate locked state from committed-lock events to activities
+      for (var i = 0; i < window.BD_SCHEDULE.length; i++) {
+        var day = window.BD_SCHEDULE[i];
+        for (var j = 0; j < day.events.length; j++) {
+          var event = day.events[j];
+          if (event.type === 'committed-lock' && event.activityId != null) {
+            var activity = window.BD_ACTIVITIES.find(function(a) { return a.id === event.activityId; });
+            if (activity) activity.locked = true;
+          }
+        }
+      }
+
       // Supabase client
       var picks = [];
       try {

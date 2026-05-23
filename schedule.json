@@ -373,7 +373,7 @@
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
-      "event_type": "open",
+      "event_type": "committed-lock",
       "series_slug": null
     }
   ]
