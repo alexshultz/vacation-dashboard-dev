@@ -368,7 +368,7 @@
       "duration": 2.3333,
       "catalogRef": "david-sight-sound-theatres",
       "startTime": "19:30",
-      "travelMinutes": null,
+      "travelMinutes": 45,
       "interested": [],
       "undecided": [],
       "notInterested": [],
