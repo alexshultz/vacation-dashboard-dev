@@ -5,6 +5,7 @@ const { useState: useStateHome } = React;
 function HomePage({ state, dispatch }) {
   const userId = state.userId;
   const sched = window.BD_SCHEDULE;
+  const today = new Date().toISOString().slice(0, 10);
 
   function youStatus(ev) {
     if (!ev.activityId) return null;
@@ -23,7 +24,7 @@ function HomePage({ state, dispatch }) {
         <h1>Hi {state.user.name}.</h1>
       </div>
 
-      {sched.map((day) => (
+      {sched.filter((day) => day.date >= today).map((day) => (
         <section key={day.date} className="day-section">
           <h2>{day.day} · {monthLabel(day.date)}</h2>
           {day.events.map(ev => {
