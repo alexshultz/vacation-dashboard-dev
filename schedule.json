@@ -1,12 +1,12 @@
 {
   "events": [
     {
-  "id": "bkf-23",
-  "title": "Breakfast -- Biscuits, Sausage, Bacon & Eggs",
-  "date": "2026-05-23",
-  "duration": 1,
-  "catalogRef": null,
-  "startTime": "08:45",
+      "id": "bkf-23",
+      "title": "Breakfast -- Biscuits, Sausage, Bacon & Eggs",
+      "date": "2026-05-23",
+      "duration": 1,
+      "catalogRef": null,
+      "startTime": "08:45",
       "travelMinutes": null,
       "interested": [],
       "undecided": [],
@@ -239,7 +239,7 @@
       "noResponse": [],
       "event_type": "meal",
       "series_slug": "supper",
-      "sub": "Pizza · Let Evie Know About Special Requests"
+      "sub": "Pizza \u00b7 Let Evie Know About Special Requests"
     },
     {
       "id": "sup-23",
@@ -375,7 +375,55 @@
       "noResponse": [],
       "event_type": "committed-lock",
       "series_slug": null,
-      "sub": "Leave 6:45 · Show 7:30 · Ends ~9:50"
+      "sub": "Leave 6:45 \u00b7 Show 7:30 \u00b7 Ends ~9:50"
+    },
+    {
+      "id": "dogwood-canyon-may25",
+      "title": "Dogwood Canyon Nature Park",
+      "date": "2026-05-25",
+      "duration": 5,
+      "catalogRef": "dogwood-canyon",
+      "startTime": "12:00",
+      "travelMinutes": 45,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 11:15 -- 45 min drive"
+    },
+    {
+      "id": "dogwood-horseback-may25",
+      "title": "Dogwood Canyon Horseback",
+      "date": "2026-05-25",
+      "duration": 1.5,
+      "catalogRef": null,
+      "startTime": "14:00",
+      "travelMinutes": null,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "On-site at Dogwood Canyon -- tickets purchased Sat 10pm"
+    },
+    {
+      "id": "dogwood-tram-may25",
+      "title": "Dogwood Canyon Tram Tour",
+      "date": "2026-05-25",
+      "duration": 2,
+      "catalogRef": null,
+      "startTime": "14:30",
+      "travelMinutes": null,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "On-site at Dogwood Canyon -- tickets purchased Sat 10pm"
     }
   ]
 }
