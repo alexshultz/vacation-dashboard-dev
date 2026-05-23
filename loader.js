@@ -31,6 +31,21 @@
     return String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0');
   }
 
+  function formatTime12h(hhmm) {
+    const [h, m] = hhmm.split(':').map(Number);
+    const period = h >= 12 ? 'PM' : 'AM';
+    const h12 = h === 0 ? 12 : h > 12 ? h - 12 : h;
+    return h12 + ':' + String(m).padStart(2, '0') + ' ' + period;
+  }
+
+  function addMinutes(hhmm, mins) {
+    const [h, m] = hhmm.split(':').map(Number);
+    const total = h * 60 + m + mins;
+    const hh = Math.floor(total / 60) % 24;
+    const mm = total % 60;
+    return String(hh).padStart(2, '0') + ':' + String(mm).padStart(2, '0');
+  }
+
   const DAY_NAMES = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   const TRIP_START_MS = new Date('2026-05-22T12:00:00').getTime();
 
@@ -206,7 +221,17 @@
           var event = day.events[j];
           if (event.type === 'committed-lock' && event.activityId != null) {
             var activity = window.BD_ACTIVITIES.find(function(a) { return a.id === event.activityId; });
-            if (activity) activity.locked = true;
+            if (activity) {
+              activity.locked = true;
+
+              // Look up raw event from schedData to get startTime and travelMinutes
+              var rawEvent = schedData.events.find(function(e) { return e.id === event.id; });
+              if (rawEvent && rawEvent.startTime) {
+                var travelMins = rawEvent.travelMinutes || 0;
+                activity.departure = formatTime12h(rawEvent.startTime);
+                activity.lockedStatus = 'Show ' + formatTime12h(addMinutes(rawEvent.startTime, travelMins));
+              }
+            }
           }
         }
       }

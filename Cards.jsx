@@ -281,7 +281,7 @@ function DenseCard({ activity, state, userId, onToggleWish, onToggleCommit }) {
 function StatusLine({ activity, committed }) {
   const hasSchedule = activity.lockedStatus && activity.departure;
   if (!hasSchedule) {
-    return <div className="status-line status-line--pending">Working on scheduling</div>;
+    return null;
   }
   const total = activity.commit.length;
   const who = committed
