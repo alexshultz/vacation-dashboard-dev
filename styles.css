@@ -76,6 +76,24 @@ body {
 .page-hero__top .seg2 { flex-shrink: 0; }
 .seg2 button { white-space: nowrap; min-width: 132px; }
 
+/* Narrow screens: let the 3-option toggle drop to a full-width second
+   row and shrink each button to fit. 132px × 3 was wider than an
+   iPhone SE (320px); below ~640px we hand the whole row to the toggle
+   so buttons can breathe at whatever width is available. */
+@media (max-width: 640px) {
+  .page-hero__top .seg2 {
+    flex-basis: 100%;
+    width: 100%;
+    flex-shrink: 1;
+  }
+  .page-hero__top .seg2 button {
+    min-width: 0;
+    padding: 9px 8px;
+    font-size: 12px;
+    gap: 4px;
+  }
+}
+
 /* ─── Catalog grid ─────────────────────────────────────────────── */
 .catalog-grid {
   display: grid; gap: 14px;
@@ -923,6 +941,237 @@ body {
   font-family: ui-monospace, Menlo, monospace;
   background: var(--color-bg); border: 1px solid var(--color-line);
   padding: 2px 6px; border-radius: 4px; margin: 0 2px;
+}
+
+/* ─── Trending tab ──────────────────────────────────────────────
+   Third tab on Activities. Sectioned layout: Heating up (3 hero
+   cards) · On the bubble (rows) · Locked in (rows). Reuses .av /
+   .btn / trend-chip from components.css; only layout chrome here.
+   (New-picks scroller deferred — needs per-pick timestamps.) */
+
+.trending { display: flex; flex-direction: column; }
+
+.trending__lede {
+  font-family: var(--font-body); font-size: 15px;
+  color: var(--color-ink-dim);
+  margin: 0 0 var(--sp-3);
+  max-width: 68ch; line-height: 1.5;
+}
+.trending__lede b { color: var(--color-ink); }
+
+/* Section header — title + count + italic "why" */
+.trending__sec-h {
+  display: flex; align-items: baseline; gap: 12px;
+  margin: var(--sp-5) 0 var(--sp-3);
+  flex-wrap: wrap;
+}
+.trending__sec-h__title {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: 19px; color: var(--color-ink);
+  letter-spacing: -0.005em;
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.trending__sec-h__emoji { font-size: 18px; }
+.trending__sec-h__count {
+  font-family: var(--font-body); font-size: 13px;
+  color: var(--color-ink-dim);
+}
+.trending__sec-h__why {
+  font-family: var(--font-body); font-size: 13px;
+  color: var(--color-ink-dim);
+  font-style: italic;
+  margin-left: auto;
+}
+
+/* ─── Heating up — 3 hero cards ──────────────────────────────── */
+.hot-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+@media (min-width: 720px) {
+  .hot-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.hot-card {
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-line);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: var(--shadow-1);
+  display: flex; flex-direction: column;
+  text-align: left;
+  cursor: pointer;
+  transition: transform var(--dur-fast), box-shadow var(--dur-fast);
+}
+.hot-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-2);
+}
+.hot-card:focus-visible {
+  outline: 2px solid var(--moss);
+  outline-offset: 2px;
+}
+.hot-card__thumb {
+  aspect-ratio: 16/10;
+  position: relative;
+  background: var(--color-bg);
+  overflow: hidden;
+}
+.hot-card__thumb img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.hot-card__rank {
+  position: absolute; top: 12px; left: 12px;
+  font-family: var(--font-display); font-weight: 800; font-size: 22px;
+  color: white; letter-spacing: -0.02em;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.45), 0 0 2px rgba(0,0,0,0.5);
+}
+.hot-card__heat {
+  position: absolute; top: 12px; right: 12px;
+  background: var(--clay); color: white;
+  font-family: var(--font-display); font-weight: 700; font-size: 11px;
+  letter-spacing: 0.04em;
+  padding: 5px 10px; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+.hot-card__heat-flame { font-size: 12px; }
+
+.hot-card__body {
+  padding: 14px 16px 16px;
+  display: flex; flex-direction: column; gap: 10px;
+  flex: 1;
+}
+.hot-card__title {
+  font-family: var(--font-display); font-weight: 800; font-size: 17px;
+  color: var(--color-ink); margin: 0;
+  line-height: 1.2; letter-spacing: -0.01em;
+}
+.hot-card__meta {
+  font-family: var(--font-body); font-size: 13px;
+  color: var(--color-ink-dim);
+}
+.hot-card__pile-row {
+  margin-top: 2px;
+}
+.hot-card__chips {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin-top: auto;
+}
+
+/* ─── Trending chip ── shared by hot cards + rows ───────────── */
+.trend-chip {
+  font-family: var(--font-display); font-weight: 700; font-size: 11px;
+  letter-spacing: 0.02em;
+  padding: 4px 10px; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: 4px;
+  white-space: nowrap;
+}
+.trend-chip--commit {
+  background: color-mix(in srgb, var(--moss) 14%, var(--color-surface));
+  color: var(--moss-on-surface);
+}
+.trend-chip--wish {
+  background: color-mix(in srgb, var(--lake) 14%, var(--color-surface));
+  color: var(--lake-on-surface);
+}
+.trend-chip--zero {
+  background: var(--color-bg);
+  color: var(--color-ink-dim);
+  border: 1px solid var(--color-line);
+}
+.trend-chip--lock {
+  background: color-mix(in srgb, var(--dusk) 14%, var(--color-surface));
+  color: var(--dusk-on-surface);
+}
+.trend-chip--you {
+  background: color-mix(in srgb, var(--sand) 22%, var(--color-surface));
+  color: var(--sand-on-surface);
+  border: 1px solid color-mix(in srgb, var(--sand) 40%, var(--color-line));
+}
+
+/* ─── Pile — overlapping avatar cluster ─────────────────────── */
+.pile {
+  display: inline-flex; align-items: center;
+}
+.pile .av {
+  margin-left: -8px;
+  border: 1.5px solid var(--color-surface);
+}
+.pile .av:first-child { margin-left: 0; }
+.pile .av--more {
+  background: var(--color-bg);
+  color: var(--color-ink-dim);
+  border-color: var(--color-line);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-family: var(--font-display); font-weight: 800; font-size: 10px;
+}
+
+/* ─── Generic Trending row (used by On-the-bubble + Locked-in) ─ */
+.trending__rows {
+  display: grid; gap: 8px;
+}
+.trending-row {
+  display: grid;
+  grid-template-columns: 64px 1fr auto;
+  gap: 14px; align-items: center;
+  padding: 10px 12px;
+  background: var(--color-surface);
+  border: 1.5px solid var(--color-line);
+  border-radius: 14px;
+}
+.trending-row__thumb {
+  width: 64px; height: 56px; border-radius: 10px;
+  object-fit: cover; display: block;
+  background: var(--color-bg);
+}
+.trending-row__body {
+  display: flex; flex-direction: column; gap: 6px;
+  min-width: 0;
+}
+.trending-row__title {
+  font-family: var(--font-display); font-weight: 700; font-size: 15px;
+  color: var(--color-ink);
+  letter-spacing: -0.005em;
+  line-height: 1.2;
+}
+.trending-row__sub {
+  font-family: var(--font-body); font-size: 13px;
+  color: var(--color-ink-dim);
+  display: flex; align-items: center; gap: 10px;
+  flex-wrap: wrap;
+}
+.trending-row__cta {
+  display: flex; align-items: center; gap: 8px;
+  flex-shrink: 0;
+}
+
+/* Locked-in variant — soft dusk wash to echo the locked card visual */
+.trending-row--locked {
+  background: color-mix(in srgb, var(--dusk) 6%, var(--color-surface));
+  border-color: color-mix(in srgb, var(--dusk) 25%, var(--color-line));
+}
+
+/* Narrow-screen behavior — rows collapse cta below body */
+@media (max-width: 540px) {
+  .trending-row {
+    grid-template-columns: 56px 1fr;
+  }
+  .trending-row__cta {
+    grid-column: 1 / -1;
+    justify-content: flex-end;
+    padding-top: 4px;
+    border-top: 1px dashed var(--color-line);
+    margin-top: 4px;
+  }
+  .trending-row__thumb {
+    width: 56px; height: 56px;
+  }
+  .trending__sec-h__why {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
 }
 
 /* ============================================================
