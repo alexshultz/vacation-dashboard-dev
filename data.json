@@ -4192,6 +4192,54 @@
       "visible": true
     },
     {
+      "slug": "dogwood-canyon-horseback",
+      "name": "Dogwood Canyon One-Hour Horseback Ride",
+      "category": "attraction",
+      "price_adult": 55.0,
+      "duration_hours": 1,
+      "rating": 4.7,
+      "description": "Guided one-hour horseback ride through Dogwood Canyon Nature Park with experienced wranglers. Explore ridges, hollows, old logging roads, and scenic views. One rider per horse. Park admission required separately. Reserve in advance.",
+      "image": "assets/thumbs/dogwood-canyon-horseback-thumb.jpg",
+      "official_url": "https://dogwoodcanyon.org/activity/one-hour-ride/",
+      "notes": "On-site at Dogwood Canyon Nature Park (2038 W State Hwy 86, Lampe MO). $55+ per rider. Ages 8+, minimum 48\" tall, max 250 lbs (weighed prior to riding). Closed-toe shoes + long pants required. Pregnant guests cannot ride. Waiver per rider: https://waiver.smartwaiver.com/w/61e7298f07f2e/web/. Arrive 30 min early. Park admission required separately.",
+      "tags": [
+        "outdoor",
+        "active",
+        "animals",
+        "family",
+        "1-2hr",
+        "horseback"
+      ],
+      "drive": "41 min",
+      "sort_key": "dogwood canyon one-hour horseback ride",
+      "visible": true
+    },
+    {
+      "slug": "dogwood-canyon-tram",
+      "name": "Dogwood Canyon Wildlife Tram Tour",
+      "category": "attraction",
+      "price_adult": 38.0,
+      "duration_hours": 2,
+      "rating": 4.8,
+      "description": "Two-hour narrated tram tour through Dogwood Canyon Nature Park, including the Bison-Elk Country pasture across the Arkansas border. Open-air trams pass bluffs, waterfalls, the 1800s-style Hope Wedding Chapel, Thunder Falls Crossing, and the Glory Hole where you can feed giant trout. Sells out often -- book in advance. Park admission required separately.",
+      "image": "assets/thumbs/dogwood-canyon-tram-thumb.jpg",
+      "official_url": "https://dogwoodcanyon.org/activity/wildlife-tram-tours/",
+      "notes": "On-site at Dogwood Canyon Nature Park (2038 W State Hwy 86, Lampe MO). Adult $38, Child $24 (ages 3+ ticketed). Seasonal pricing can drop to $30/$20. 10% Annual Member discount. Park admission required separately. Sells out -- book ahead at tickets.visitozarks.org.",
+      "tags": [
+        "outdoor",
+        "animals",
+        "family",
+        "kid-focused",
+        "nature",
+        "relaxed",
+        "1-2hr",
+        "tram"
+      ],
+      "drive": "41 min",
+      "sort_key": "dogwood canyon wildlife tram tour",
+      "visible": true
+    },
+    {
       "slug": "dolly-parton-s-stampede",
       "name": "Dolly Parton's Stampede",
       "category": "show",
