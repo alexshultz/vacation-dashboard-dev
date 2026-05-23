@@ -10,22 +10,23 @@ function ActivitiesPage({ state, dispatch }) {
       <div className="page-hero">
         <div className="page-hero__top">
           <h1>Activities</h1>
-          <div className="seg2" role="tablist">
+          <div className="seg2 three" role="tablist">
             <button role="tab" aria-pressed={mode === 'browse'} onClick={() => setMode('browse')}>
               📚 Browse
             </button>
             <button role="tab" aria-pressed={mode === 'quickpick'} onClick={() => setMode('quickpick')}>
               ⚡ QuickPick
             </button>
+            <button role="tab" aria-pressed={mode === 'trending'} onClick={() => setMode('trending')}>
+              🔥 Trending
+            </button>
           </div>
         </div>
       </div>
 
-      {mode === 'browse' ? (
-        <BrowseView state={state} dispatch={dispatch} />
-      ) : (
-        <QuickPickView state={state} dispatch={dispatch} />
-      )}
+      {mode === 'browse' && <BrowseView state={state} dispatch={dispatch} />}
+      {mode === 'quickpick' && <QuickPickView state={state} dispatch={dispatch} />}
+      {mode === 'trending' && <TrendingView state={state} dispatch={dispatch} />}
     </main>
   );
 }
@@ -384,4 +385,243 @@ function DeckCard({ activity, className = '', style, onPointerDown, onPointerMov
   );
 }
 
-Object.assign(window, { ActivitiesPage });
+/* ──────────────────────────────────────────────────────────────
+   TRENDING VIEW — the third tab on Activities.
+   Sectioned layout: Heating up · On the bubble · Locked in.
+   Everything is computed from BD_ACTIVITIES; no extra data needed
+   beyond the existing wish[] and commit[] arrays.
+   (Section 4 "New picks this week" is deferred — it needs a
+   per-pick timestamp the picks table doesn't store yet.)
+   ────────────────────────────────────────────────────────────── */
+
+/* Activity score: commits weighted 2×, wishlist-only adds 1. Locked
+   items don't get the bonus — they're already settled. */
+function trendingScore(a) {
+  const wishOnly = a.wish.filter(u => !a.commit.includes(u)).length;
+  return a.commit.length * 2 + wishOnly;
+}
+
+/* "On the bubble" — high wish, zero or low commits, NOT locked.
+   These are the ones begging for a decision. */
+function isOnBubble(a) {
+  if (a.locked) return false;
+  return a.commit.length <= 1 && a.wish.length >= 4;
+}
+
+function TrendingView({ state, dispatch }) {
+  const all = window.BD_ACTIVITIES;
+
+  const ranked = useMemoAct(() => {
+    return [...all]
+      .map(a => ({ a, score: trendingScore(a) }))
+      .filter(x => x.score > 0)
+      .sort((x, y) => y.score - x.score);
+  }, [state._tick]);
+
+  const heating = ranked.filter(x => !x.a.locked).slice(0, 3);
+  const onBubble = all.filter(isOnBubble);
+  const lockedIn = all.filter(a => a.locked);
+
+  const totalInteresting = ranked.length;
+
+  return (
+    <div className="trending">
+      <p className="trending__lede">
+        What the family's into right now.
+        {' '}<b>{totalInteresting} of {all.length} activities</b> have at least
+        one wishlist or commit from someone in the group.
+      </p>
+
+      {/* ─── HEATING UP ──────────────────────── */}
+      {heating.length > 0 && (
+        <>
+          <SectionHeader
+            emoji="🔥"
+            title="Heating up"
+            count={`Top ${heating.length} by family interest`}
+            why="most commits + wishlists combined"
+          />
+          <div className="hot-grid">
+            {heating.map(({ a, score }, i) => (
+              <HotCard
+                key={a.id}
+                rank={i + 1}
+                activity={a}
+                score={score}
+                userId={state.userId}
+                onOpen={() => dispatch({ type: 'openDetail', id: a.id, list: [a.id] })}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* ─── ON THE BUBBLE ───────────────────── */}
+      {onBubble.length > 0 && (
+        <>
+          <SectionHeader
+            title="On the bubble"
+            count={`${onBubble.length} ${onBubble.length === 1 ? 'activity' : 'activities'}`}
+            why="lots of interest, no one's committed yet"
+          />
+          <div className="trending__rows">
+            {onBubble.map(a => (
+              <BubbleRow
+                key={a.id}
+                activity={a}
+                userId={state.userId}
+                onOpen={() => dispatch({ type: 'openDetail', id: a.id, list: [a.id] })}
+                onCommit={() => dispatch({ type: 'commit', id: a.id })}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* ─── LOCKED IN ───────────────────────── */}
+      {lockedIn.length > 0 && (
+        <>
+          <SectionHeader
+            title="Locked in by family"
+            count={`${lockedIn.length} ${lockedIn.length === 1 ? 'activity' : 'activities'}`}
+            why="already settled — the trip's spine"
+          />
+          <div className="trending__rows">
+            {lockedIn.map(a => (
+              <LockedRow
+                key={a.id}
+                activity={a}
+                userId={state.userId}
+                onTimeline={() => dispatch({ type: 'goto', page: 'timeline' })}
+                onOpen={() => dispatch({ type: 'openDetail', id: a.id, list: [a.id] })}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+/* ─── Section header ─── */
+function SectionHeader({ emoji, title, count, why }) {
+  return (
+    <div className="trending__sec-h">
+      <span className="trending__sec-h__title">
+        {emoji && <span className="trending__sec-h__emoji">{emoji}</span>}
+        {title}
+      </span>
+      {count && <span className="trending__sec-h__count">{count}</span>}
+      {why && <span className="trending__sec-h__why">{why}</span>}
+    </div>
+  );
+}
+
+/* ─── Pile of avatars — small, overlapping ─── */
+function Pile({ ids, max = 4 }) {
+  const people = ids.map(id => window.BD_PEOPLE.find(p => p.id === id)).filter(Boolean);
+  const shown = people.slice(0, max);
+  const extra = people.length - shown.length;
+  return (
+    <div className="pile" aria-label={`${people.length} people`}>
+      {shown.map(p => (
+        <window.Avatar key={p.id} name={p.name} status="wish" />
+      ))}
+      {extra > 0 && <span className="av av--more" aria-hidden="true">+{extra}</span>}
+    </div>
+  );
+}
+
+/* ─── Heating-up hero card ─── */
+function HotCard({ rank, activity, score, userId, onOpen }) {
+  const a = activity;
+  const youIn = a.commit.includes(userId);
+  const youWish = a.wish.includes(userId) && !youIn;
+  // Unique people who care, regardless of state.
+  const everyone = Array.from(new Set([...a.wish, ...a.commit]));
+
+  return (
+    <article className="hot-card" onClick={onOpen} role="button" tabIndex={0}
+             onKeyDown={(e) => { if (e.key === 'Enter') onOpen(); }}>
+      <div className="hot-card__thumb">
+        <img src={a.thumb} alt="" draggable="false" />
+        <span className="hot-card__rank">#{rank}</span>
+        <span className="hot-card__heat">
+          <span className="hot-card__heat-flame">🔥</span> {everyone.length} picks
+        </span>
+      </div>
+      <div className="hot-card__body">
+        <h3 className="hot-card__title">{a.name}</h3>
+        <div className="hot-card__meta">{a.drive} · {a.price} · ★ {a.rating}</div>
+        <div className="hot-card__pile-row">
+          <Pile ids={everyone} max={4} />
+        </div>
+        <div className="hot-card__chips">
+          <span className="trend-chip trend-chip--commit">✓ {a.commit.length} committed</span>
+          <span className="trend-chip trend-chip--wish">♥ {a.wish.length} wishlisted</span>
+          {youIn && <span className="trend-chip trend-chip--you">You're in</span>}
+          {youWish && <span className="trend-chip trend-chip--you">You wishlisted</span>}
+        </div>
+      </div>
+    </article>
+  );
+}
+
+/* ─── On-the-bubble row ─── */
+function BubbleRow({ activity, userId, onOpen, onCommit }) {
+  const a = activity;
+  const youIn = a.commit.includes(userId);
+  const youWish = a.wish.includes(userId) && !youIn;
+  return (
+    <div className="trending-row">
+      <img className="trending-row__thumb" src={a.thumb} alt="" />
+      <div className="trending-row__body">
+        <div className="trending-row__title">{a.name}</div>
+        <div className="trending-row__sub">
+          <Pile ids={a.wish} max={4} />
+          <span className="trend-chip trend-chip--wish">♥ {a.wish.length} wishlisted</span>
+          <span className="trend-chip trend-chip--zero">
+            {a.commit.length === 0 ? '0 committed' : `${a.commit.length} committed`}
+          </span>
+          {youWish && <span className="trend-chip trend-chip--you">You wishlisted</span>}
+          {youIn && <span className="trend-chip trend-chip--you">You're in</span>}
+        </div>
+      </div>
+      <div className="trending-row__cta">
+        <button className="btn btn--secondary btn--small" onClick={onOpen}>Open</button>
+        {!youIn && (
+          <button className="btn btn--primary btn--small" onClick={onCommit}>I'm in</button>
+        )}
+      </div>
+    </div>
+  );
+}
+
+/* ─── Locked-in row ─── */
+function LockedRow({ activity, userId, onTimeline, onOpen }) {
+  const a = activity;
+  const youIn = a.commit.includes(userId);
+  // Real data carries lockedStatus ("Show 7:30 PM") instead of the
+  // prototype's scheduledFor; prefer an explicit scheduledFor if set.
+  const when = a.scheduledFor || a.lockedStatus;
+  return (
+    <div className="trending-row trending-row--locked">
+      <img className="trending-row__thumb" src={a.thumb} alt="" />
+      <div className="trending-row__body">
+        <div className="trending-row__title">{a.name}</div>
+        <div className="trending-row__sub">
+          {when && <span>{when}</span>}
+          <span>{a.commit.length} going</span>
+          <span className="trend-chip trend-chip--lock">🔒 Locked</span>
+          {youIn && <span className="trend-chip trend-chip--you">You're in</span>}
+        </div>
+      </div>
+      <div className="trending-row__cta">
+        <button className="btn btn--secondary btn--small" onClick={onOpen}>Open</button>
+        <button className="btn btn--ghost btn--small" onClick={onTimeline}>See on timeline</button>
+      </div>
+    </div>
+  );
+}
+
+Object.assign(window, { ActivitiesPage, TrendingView });
