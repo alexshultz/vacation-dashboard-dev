@@ -391,7 +391,7 @@
       "noResponse": [],
       "event_type": "open",
       "series_slug": null,
-      "sub": "Leave 11:15 -- 45 min drive"
+      "sub": "Leave 11:15 -- 45 min drive -- park admission required for tram + horseback"
     },
     {
       "id": "dogwood-horseback-may25",
@@ -407,7 +407,7 @@
       "noResponse": [],
       "event_type": "open",
       "series_slug": null,
-      "sub": "On-site at Dogwood Canyon -- tickets purchased Sat 10pm"
+      "sub": "$55+ per rider -- 1hr ride, arrive 2:00 (ride 2:30-3:30) -- ages 8+, max 250lbs, closed-toe shoes + long pants -- waiver required"
     },
     {
       "id": "dogwood-tram-may25",
@@ -423,7 +423,7 @@
       "noResponse": [],
       "event_type": "open",
       "series_slug": null,
-      "sub": "On-site at Dogwood Canyon -- tickets purchased Sat 10pm"
+      "sub": "Adult $38 / Child $24 -- 2hr narrated tour, ages 3+ ticketed -- SELLS OUT, book Sat 10pm"
     }
   ]
 }
