@@ -365,16 +365,17 @@
       "id": "david-sight-sound-may27",
       "title": "DAVID (Sight & Sound Theatres)",
       "date": "2026-05-27",
-      "duration": 2.3333,
+      "duration": 3.0833,
       "catalogRef": "david-sight-sound-theatres",
-      "startTime": "19:30",
+      "startTime": "18:45",
       "travelMinutes": 45,
       "interested": [],
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
       "event_type": "committed-lock",
-      "series_slug": null
+      "series_slug": null,
+      "sub": "Leave 6:45 · Show 7:30 · Ends ~9:50"
     }
   ]
 }

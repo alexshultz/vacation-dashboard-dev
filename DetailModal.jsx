@@ -256,7 +256,6 @@ function PaneContent({ activity, userId, onClose, onToggleWish, onToggleCommit }
               <button className="btn btn--locked-in" disabled aria-disabled="true">
                 🔒 {c ? 'Locked in — text Alex to change' : 'Locked — text Alex to join'}
               </button>
-              <button className="btn btn--ghost">Add to calendar</button>
             </>
           ) : (
             <>
