@@ -438,7 +438,7 @@
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
-      "event_type": "open",
+      "event_type": "committed-lock",
       "series_slug": null,
       "sub": "Leave 3:30 -- Arrive ~3:52 -- View grounds -- VIP show 4:40 -- Ends ~8:00 -- tickets Sat 10pm"
     }
