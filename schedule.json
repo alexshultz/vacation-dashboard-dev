@@ -430,7 +430,7 @@
       "id": "dolly-stampede-may26",
       "title": "Dolly Parton's Stampede (VIP)",
       "date": "2026-05-26",
-      "duration": 4.5,
+      "duration": 3.5,
       "catalogRef": "dolly-parton-s-stampede",
       "startTime": "15:30",
       "travelMinutes": 22,
@@ -440,7 +440,7 @@
       "noResponse": [],
       "event_type": "committed-lock",
       "series_slug": null,
-      "sub": "Leave 3:30 -- Arrive ~3:52 -- View grounds -- VIP show 4:40 -- Ends ~8:00 -- tickets Sat 10pm"
+      "sub": "Pick up tickets by 4:15 -- Pre-show 4:40 -- Show 5:30 -- Finish 7:00"
     }
   ]
 }
