@@ -406,9 +406,9 @@
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
-      "event_type": "open",
+      "event_type": "committed-lock",
       "series_slug": null,
-      "sub": "$55+ per rider -- 1hr ride, arrive 2:00 (ride 2:30-3:30) -- ages 8+, max 250lbs, closed-toe shoes + long pants -- waiver required -- book Sat 10pm"
+      "sub": "Unavailable"
     },
     {
       "id": "dogwood-tram-may25",
@@ -422,7 +422,7 @@
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
-      "event_type": "open",
+      "event_type": "committed-lock",
       "series_slug": null,
       "sub": "Adult $38 / Child $24 -- 2hr narrated tour, ages 3+ ticketed -- SELLS OUT, book Sat 10pm"
     },
