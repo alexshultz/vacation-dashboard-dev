@@ -239,7 +239,7 @@
       "noResponse": [],
       "event_type": "meal",
       "series_slug": "supper",
-      "sub": "Pizza \u00b7 Let Evie Know About Special Requests"
+      "sub": "Pizza · Let Evie Know About Special Requests"
     },
     {
       "id": "sup-23",
@@ -376,7 +376,7 @@
       "noResponse": [],
       "event_type": "committed-lock",
       "series_slug": null,
-      "sub": "Leave 6:45 \u00b7 Show 7:30 \u00b7 Ends ~9:50"
+      "sub": "Leave 6:45 · Show 7:30 · Ends ~9:50"
     },
     {
       "id": "dogwood-canyon-may25",
@@ -441,6 +441,22 @@
       "event_type": "committed-lock",
       "series_slug": null,
       "sub": "Pick up tickets by 4:15 -- Pre-show 4:40 -- Show 5:30 -- Finish 7:00"
+    },
+    {
+      "id": "rear-window-may26",
+      "title": "Rear Window (1954)",
+      "date": "2026-05-26",
+      "duration": 2,
+      "catalogRef": null,
+      "startTime": "20:00",
+      "travelMinutes": null,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Alfred Hitchcock · Media room at the lodge"
     }
   ]
 }
