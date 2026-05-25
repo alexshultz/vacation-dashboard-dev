@@ -344,7 +344,7 @@
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
-      "event_type": "open",
+      "event_type": "committed-lock",
       "series_slug": null
     },
     {
@@ -390,7 +390,7 @@
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
-      "event_type": "open",
+      "event_type": "committed-lock",
       "series_slug": null,
       "sub": "Leave 11:15 -- 45 min drive -- park admission required for tram + horseback"
     },
