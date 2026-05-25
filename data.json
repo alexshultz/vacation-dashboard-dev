@@ -5697,6 +5697,48 @@
       "visible": false
     },
     {
+      "slug": "guy-fieris-kitchen-bar",
+      "name": "Guy Fieri's Branson Kitchen + Bar",
+      "category": "attraction",
+      "price_adult": null,
+      "duration_hours": 1.5,
+      "rating": 4.3,
+      "description": "Food Network celebrity Guy Fieri's Branson outpost at Branson Landing, serving bold American comfort food with his signature Flavortown flair. Famous for Trash Can Nachos, Big Bite Burgers, and an extensive craft beer and cocktail menu. High-energy atmosphere with TVs and sports-bar vibe -- loud and fun for families.",
+      "image": "assets/thumbs/guy-fieris-kitchen-bar-thumb.jpg",
+      "official_url": "https://www.branson.com/the-best-restaurants-in-branson-landing/",
+      "notes": "Branson Landing, 1 Branson Landing, Branson MO. About 24 min from Watermill Cove. Walk-ins typically available; call ahead for large groups.",
+      "tags": [
+        "family",
+        "food",
+        "indoor",
+        "relaxed",
+        "1-2hr"
+      ],
+      "tag_meta": {
+        "vocabulary_round": 8,
+        "classifier": "claude-sonnet-4-6",
+        "confidence": 0.85,
+        "reasoning": "Celebrity chef restaurant at Branson Landing, family-friendly, indoor dining, casual relaxed atmosphere, 1-2 hour meal.",
+        "categories": {
+          "show": [],
+          "music": [],
+          "audience": [
+            "family"
+          ],
+          "attraction": [
+            "indoor",
+            "food",
+            "relaxed",
+            "1-2hr"
+          ]
+        },
+        "classified": "2026-05-25"
+      },
+      "drive": "24 min",
+      "sort_key": "guy fieri's branson kitchen + bar",
+      "visible": true
+    },
+    {
       "slug": "branson-landing-h-and-m",
       "name": "H&M (Branson Landing)",
       "category": "attraction",
@@ -6469,6 +6511,48 @@
       },
       "drive": "19 min",
       "sort_key": "joe nichols",
+      "visible": true
+    },
+    {
+      "slug": "joes-crab-shack",
+      "name": "Joe's Crab Shack",
+      "category": "attraction",
+      "price_adult": null,
+      "duration_hours": 1.5,
+      "rating": 4.2,
+      "description": "Classic seafood chain at Branson Landing with a lively atmosphere and sweeping views of Lake Taneycomo. Known for signature steam pots loaded with crab, shrimp, lobster, corn, and potatoes. Large menu also includes fish tacos, po'boys, and other coastal favorites. Great for big groups -- family-style portions and a festive vibe.",
+      "image": "assets/thumbs/joes-crab-shack-thumb.jpg",
+      "official_url": "https://www.branson.com/the-best-restaurants-in-branson-landing/",
+      "notes": "Branson Landing, 1 Branson Landing, Branson MO. About 24 min from Watermill Cove. Walk-ins welcome; reservations recommended for large groups.",
+      "tags": [
+        "family",
+        "food",
+        "indoor",
+        "relaxed",
+        "1-2hr"
+      ],
+      "tag_meta": {
+        "vocabulary_round": 8,
+        "classifier": "claude-sonnet-4-6",
+        "confidence": 0.85,
+        "reasoning": "Seafood restaurant at Branson Landing, family-friendly, indoor dining, casual relaxed atmosphere, 1-2 hour meal.",
+        "categories": {
+          "show": [],
+          "music": [],
+          "audience": [
+            "family"
+          ],
+          "attraction": [
+            "indoor",
+            "food",
+            "relaxed",
+            "1-2hr"
+          ]
+        },
+        "classified": "2026-05-25"
+      },
+      "drive": "24 min",
+      "sort_key": "joe's crab shack",
       "visible": true
     },
     {
