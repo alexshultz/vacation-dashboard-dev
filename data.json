@@ -9287,6 +9287,48 @@
       "visible": true
     },
     {
+      "slug": "rear-window-1954",
+      "name": "Rear Window (1954)",
+      "category": "attraction",
+      "price_adult": null,
+      "duration_hours": 2,
+      "rating": 4.9,
+      "description": "Alfred Hitchcock's masterpiece of suspense -- one of the greatest films ever made. Laid-up photographer L.B. Jefferies (James Stewart) passes the time watching his neighbors through his Greenwich Village courtyard window, and gradually becomes convinced he has witnessed a murder. Grace Kelly is luminous as his socialite girlfriend. Technically audacious, wickedly tense, and endlessly rewatchable. Screening in the media room at Watermill Cove lodge.",
+      "image": "assets/thumbs/rear-window-1954-thumb.jpg",
+      "official_url": "https://en.wikipedia.org/wiki/Rear_Window",
+      "notes": "1954 · Dir. Alfred Hitchcock · 112 min · Starring James Stewart, Grace Kelly · Media room at the lodge -- no travel needed.",
+      "tags": [
+        "family",
+        "indoor",
+        "relaxed",
+        "1-2hr",
+        "evening"
+      ],
+      "tag_meta": {
+        "vocabulary_round": 8,
+        "classifier": "claude-sonnet-4-6",
+        "confidence": 0.9,
+        "reasoning": "Classic film screening at the lodge -- indoor, relaxed, family-appropriate, evening activity.",
+        "categories": {
+          "show": [],
+          "music": [],
+          "audience": [
+            "family"
+          ],
+          "attraction": [
+            "indoor",
+            "relaxed",
+            "1-2hr",
+            "evening"
+          ]
+        },
+        "classified": "2026-05-25"
+      },
+      "drive": "0 min",
+      "sort_key": "rear window (1954)",
+      "visible": true
+    },
+    {
       "slug": "reflections-art-gallery-branson",
       "name": "Reflections Art Gallery",
       "category": "activity",
