@@ -3,6 +3,19 @@
 
 const { useState: useStateShell, useReducer, useEffect } = React;
 
+// Inject toast animation styles
+if (!document.getElementById('toast-styles')) {
+  const style = document.createElement('style');
+  style.id = 'toast-styles';
+  style.textContent = `
+    @keyframes toast-fade-in {
+      from { opacity: 0; transform: translateX(-50%) translateY(-10px); }
+      to { opacity: 1; transform: translateX(-50%) translateY(0); }
+    }
+  `;
+  document.head.appendChild(style);
+}
+
 const NAV = [
   { id: 'home',       label: 'Home' },
   { id: 'activities', label: 'Activities' },
@@ -123,12 +136,42 @@ function Shell() {
     detailLastId: null,
   }));
 
+  const [showToast, setShowToast] = useStateShell(false);
+
   useEffect(() => {
     try {
       localStorage.setItem('bd-user', state.userId);
       if (state.user) localStorage.setItem('vacdash:v1:user', state.user.name);
     } catch (e) {}
   }, [state.userId]);
+
+  // Listen for data refresh events (from pull-to-refresh)
+  useEffect(() => {
+    function onDataRefreshed(e) {
+      // Increment _tick to trigger re-renders in components that depend on BD_* globals
+      dispatch({ type: 'commit', id: '_refresh_tick_' + Date.now() });
+    }
+    window.addEventListener('bd:datarefreshed', onDataRefreshed);
+    return () => window.removeEventListener('bd:datarefreshed', onDataRefreshed);
+  }, []);
+
+  // Background auto-refresh every 10 minutes
+  useEffect(() => {
+    const AUTO_REFRESH_INTERVAL_MS = 10 * 60 * 1000;
+
+    const intervalId = setInterval(async () => {
+      const result = await window.BD_REFRESH_DATA();
+      if (result.success && result.changed) {
+        // Update state to trigger re-renders
+        dispatch({ type: 'commit', id: '_refresh_tick_' + Date.now() });
+        // Show toast
+        setShowToast(true);
+        setTimeout(() => setShowToast(false), 3000);
+      }
+    }, AUTO_REFRESH_INTERVAL_MS);
+
+    return () => clearInterval(intervalId);
+  }, []);
 
   const effectivePage = state.userId ? state.page : 'profile';
   let PageComp;
@@ -142,6 +185,31 @@ function Shell() {
 
   return (
     <>
+      {window.PullToRefresh && <window.PullToRefresh />}
+
+      {showToast && (
+        <div
+          data-testid="update-toast"
+          style={{
+            position: 'fixed',
+            top: '80px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            background: '#333',
+            color: '#fff',
+            padding: '12px 24px',
+            borderRadius: '8px',
+            fontSize: '14px',
+            fontWeight: '500',
+            zIndex: 10000,
+            boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+            animation: 'toast-fade-in 0.2s ease-out'
+          }}
+        >
+          Updated
+        </div>
+      )}
+
       <header className="site-header">
         <div className="site-header__inner">
           <a className="logo" href="#" onClick={(e) => { e.preventDefault(); dispatch({ type: 'goto', page: 'home' }); }}>

@@ -420,6 +420,7 @@ function TrendingView({ state, dispatch }) {
 
   const heating = ranked.filter(x => !x.a.locked).slice(0, 3);
   const onBubble = all.filter(isOnBubble);
+  const lockedIn = all.filter(a => a.locked);
 
   const totalInteresting = ranked.length;
 
@@ -471,6 +472,28 @@ function TrendingView({ state, dispatch }) {
                 userId={state.userId}
                 onOpen={() => dispatch({ type: 'openDetail', id: a.id, list: [a.id] })}
                 onCommit={() => dispatch({ type: 'commit', id: a.id })}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* ─── LOCKED IN ───────────────────────── */}
+      {lockedIn.length > 0 && (
+        <>
+          <SectionHeader
+            title="Locked in by family"
+            count={`${lockedIn.length} ${lockedIn.length === 1 ? 'activity' : 'activities'}`}
+            why="already settled — the trip's spine"
+          />
+          <div className="trending__rows">
+            {lockedIn.map(a => (
+              <LockedRow
+                key={a.id}
+                activity={a}
+                userId={state.userId}
+                onTimeline={() => dispatch({ type: 'goto', page: 'timeline' })}
+                onOpen={() => dispatch({ type: 'openDetail', id: a.id, list: [a.id] })}
               />
             ))}
           </div>

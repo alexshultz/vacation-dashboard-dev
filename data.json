@@ -4049,50 +4049,6 @@
       "visible": true
     },
     {
-      "slug": "dicks-5-and-10",
-      "name": "Dick's 5 & 10",
-      "category": "attraction",
-      "price_adult": null,
-      "duration_hours": 1,
-      "rating": 4.7,
-      "description": "A Branson institution since 1952 -- the last great American Five and Dime. Dick's sprawls across a full city block on West Main Street and packs in over 50,000 items: old-fashioned candy by the pound, a soda pop shoppe, toys, novelties, souvenirs, crafts, books, sports gear, hardware oddities, and enough nostalgia to slow everybody down for an hour. The Candy Emporium and Soda Pop Shoppe alone are worth the stop. Cash-register chaos, narrow aisles, and absolutely nothing like a modern retail store -- in the best possible way.",
-      "image": "assets/thumbs/dicks-5-and-10-thumb.jpg",
-      "official_url": "https://www.dicks5and10.com",
-      "notes": "103 W Main St, Branson MO 65616. Phone: 417-323-6372. About 24 min from Watermill Cove. Open daily -- call ahead for hours. Cash and card accepted.",
-      "tags": [
-        "family",
-        "kid-focused",
-        "indoor",
-        "relaxed",
-        "shopping",
-        "1-2hr"
-      ],
-      "tag_meta": {
-        "vocabulary_round": 8,
-        "classifier": "claude-sonnet-4-6",
-        "confidence": 0.9,
-        "reasoning": "Classic five-and-dime retail store, family and kid-friendly, indoor shopping, relaxed pace, 1 hour typical visit.",
-        "categories": {
-          "show": [],
-          "music": [],
-          "audience": [
-            "family",
-            "kid-focused"
-          ],
-          "attraction": [
-            "indoor",
-            "relaxed",
-            "shopping",
-            "1-2hr"
-          ]
-        },
-        "classified": "2026-05-25"
-      },
-      "drive": "24 min",
-      "sort_key": "dick's 5 & 10",
-      "visible": true
-    },
-    {
       "slug": "dickerson-park-zoo",
       "name": "Dickerson Park Zoo",
       "category": "attraction",
@@ -5741,48 +5697,6 @@
       "visible": false
     },
     {
-      "slug": "guy-fieris-kitchen-bar",
-      "name": "Guy Fieri's Branson Kitchen + Bar",
-      "category": "attraction",
-      "price_adult": null,
-      "duration_hours": 1.5,
-      "rating": 4.3,
-      "description": "Food Network celebrity Guy Fieri's Branson outpost at Branson Landing, serving bold American comfort food with his signature Flavortown flair. Famous for Trash Can Nachos, Big Bite Burgers, and an extensive craft beer and cocktail menu. High-energy atmosphere with TVs and sports-bar vibe -- loud and fun for families.",
-      "image": "assets/thumbs/guy-fieris-kitchen-bar-thumb.jpg",
-      "official_url": "https://www.branson.com/the-best-restaurants-in-branson-landing/",
-      "notes": "Branson Landing, 1 Branson Landing, Branson MO. About 24 min from Watermill Cove. Walk-ins typically available; call ahead for large groups.",
-      "tags": [
-        "family",
-        "food",
-        "indoor",
-        "relaxed",
-        "1-2hr"
-      ],
-      "tag_meta": {
-        "vocabulary_round": 8,
-        "classifier": "claude-sonnet-4-6",
-        "confidence": 0.85,
-        "reasoning": "Celebrity chef restaurant at Branson Landing, family-friendly, indoor dining, casual relaxed atmosphere, 1-2 hour meal.",
-        "categories": {
-          "show": [],
-          "music": [],
-          "audience": [
-            "family"
-          ],
-          "attraction": [
-            "indoor",
-            "food",
-            "relaxed",
-            "1-2hr"
-          ]
-        },
-        "classified": "2026-05-25"
-      },
-      "drive": "24 min",
-      "sort_key": "guy fieri's branson kitchen + bar",
-      "visible": true
-    },
-    {
       "slug": "branson-landing-h-and-m",
       "name": "H&M (Branson Landing)",
       "category": "attraction",
@@ -6555,48 +6469,6 @@
       },
       "drive": "19 min",
       "sort_key": "joe nichols",
-      "visible": true
-    },
-    {
-      "slug": "joes-crab-shack",
-      "name": "Joe's Crab Shack",
-      "category": "attraction",
-      "price_adult": null,
-      "duration_hours": 1.5,
-      "rating": 4.2,
-      "description": "Classic seafood chain at Branson Landing with a lively atmosphere and sweeping views of Lake Taneycomo. Known for signature steam pots loaded with crab, shrimp, lobster, corn, and potatoes. Large menu also includes fish tacos, po'boys, and other coastal favorites. Great for big groups -- family-style portions and a festive vibe.",
-      "image": "assets/thumbs/joes-crab-shack-thumb.jpg",
-      "official_url": "https://www.branson.com/the-best-restaurants-in-branson-landing/",
-      "notes": "Branson Landing, 1 Branson Landing, Branson MO. About 24 min from Watermill Cove. Walk-ins welcome; reservations recommended for large groups.",
-      "tags": [
-        "family",
-        "food",
-        "indoor",
-        "relaxed",
-        "1-2hr"
-      ],
-      "tag_meta": {
-        "vocabulary_round": 8,
-        "classifier": "claude-sonnet-4-6",
-        "confidence": 0.85,
-        "reasoning": "Seafood restaurant at Branson Landing, family-friendly, indoor dining, casual relaxed atmosphere, 1-2 hour meal.",
-        "categories": {
-          "show": [],
-          "music": [],
-          "audience": [
-            "family"
-          ],
-          "attraction": [
-            "indoor",
-            "food",
-            "relaxed",
-            "1-2hr"
-          ]
-        },
-        "classified": "2026-05-25"
-      },
-      "drive": "24 min",
-      "sort_key": "joe's crab shack",
       "visible": true
     },
     {
@@ -9331,48 +9203,6 @@
       "visible": true
     },
     {
-      "slug": "rear-window-1954",
-      "name": "Rear Window (1954)",
-      "category": "attraction",
-      "price_adult": null,
-      "duration_hours": 2,
-      "rating": 4.9,
-      "description": "Alfred Hitchcock's masterpiece of suspense -- one of the greatest films ever made. Laid-up photographer L.B. Jefferies (James Stewart) passes the time watching his neighbors through his Greenwich Village courtyard window, and gradually becomes convinced he has witnessed a murder. Grace Kelly is luminous as his socialite girlfriend. Technically audacious, wickedly tense, and endlessly rewatchable. Screening in the media room at Watermill Cove lodge.",
-      "image": "assets/thumbs/rear-window-1954-thumb.jpg",
-      "official_url": "https://en.wikipedia.org/wiki/Rear_Window",
-      "notes": "1954 · Dir. Alfred Hitchcock · 112 min · Starring James Stewart, Grace Kelly · Media room at the lodge -- no travel needed.",
-      "tags": [
-        "family",
-        "indoor",
-        "relaxed",
-        "1-2hr",
-        "evening"
-      ],
-      "tag_meta": {
-        "vocabulary_round": 8,
-        "classifier": "claude-sonnet-4-6",
-        "confidence": 0.9,
-        "reasoning": "Classic film screening at the lodge -- indoor, relaxed, family-appropriate, evening activity.",
-        "categories": {
-          "show": [],
-          "music": [],
-          "audience": [
-            "family"
-          ],
-          "attraction": [
-            "indoor",
-            "relaxed",
-            "1-2hr",
-            "evening"
-          ]
-        },
-        "classified": "2026-05-25"
-      },
-      "drive": "0 min",
-      "sort_key": "rear window (1954)",
-      "visible": true
-    },
-    {
       "slug": "reflections-art-gallery-branson",
       "name": "Reflections Art Gallery",
       "category": "activity",
@@ -11907,13 +11737,13 @@
       "slug": "truth-traveler",
       "name": "Truth Traveler",
       "category": "attraction",
-      "price_adult": 39.99,
+      "price_adult": null,
       "duration_hours": 2,
       "rating": 4.5,
-      "description": "Branson's newest attraction -- a 5D virtual reality time-travel experience through biblical history at the former Andy Williams Moon River Theatre. Climb into a motion capsule with VR headset and journey from the Garden of Eden through Noah's Flood, the Tower of Babel, the Nativity, and Christ's resurrection and ascension. Guided by characters Inventor, P.O.D. (a wisecracking robot), and Rae. Also includes a live Truth Traveler Theater show, gift shop (Timeless Treats), and snack area. Faith-oriented but spectacular for anyone who loves immersive rides. Each ticket is valid for 3 consecutive days -- you can come back.",
+      "description": "Truth Traveler is an immersive virtual reality experience in Branson that takes visitors through key scenes from biblical history using high-quality VR headsets and theatrical elements. Designed for faith-oriented families who want an educational and visually engaging way to explore Bible stories. Best suited for older children and adults -- younger kids may find the VR format overwhelming.",
       "image": "assets/thumbs/truth-traveler-thumb.jpg",
-      "official_url": "https://truthtraveler.com/branson",
-      "notes": "1 Andy Williams Blvd, Branson MO 65616 (former Andy Williams Moon River Theatre). Phone: (417) 334-4500. Hours: Mon-Sat 9am-6pm, Sun 10am-5pm. Admission: Adult (18+) $39.99 · Teen (13-17) $24.99 · Child (6-12) $9.99 · Under 5 free. Experience Pack (admission + snack & drink): Adult $44.99 · Teen $29.99 · Child $14.99. Souvenir Pack (all ages) $57.99. Tickets valid 3 days. About 26 min from Watermill Cove. Purchase in advance or at the door.",
+      "official_url": "https://www.branson.com/attractions/truth-traveler/",
+      "notes": "Check branson.com or the venue for current hours, pricing, and minimum age recommendations. Not recommended for guests prone to motion sickness.",
       "tags": [
         "1-2hr",
         "educational",
@@ -11943,7 +11773,7 @@
         },
         "classified": "2026-04-21"
       },
-      "drive": "26 min",
+      "drive": "19 min",
       "sort_key": "truth traveler",
       "visible": true
     },

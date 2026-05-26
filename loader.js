@@ -164,6 +164,7 @@
     'Interests.jsx',
     'Timeline.jsx',
     'Profile.jsx',
+    'PullToRefresh.jsx',
     'Shell.jsx',
     'Tweaks.jsx'
   ];
@@ -263,6 +264,77 @@
       if (loadingEl) loadingEl.textContent = 'Error loading dashboard. Please refresh.';
     }
   }
+
+  // ── F. Data refresh (for pull-to-refresh + background auto-refresh) ─────
+
+  window.BD_REFRESH_DATA = async function() {
+    try {
+      var [actResp, schedResp] = await Promise.all([
+        fetch('data.json'),
+        fetch('schedule.json')
+      ]);
+
+      var [actData, schedData] = await Promise.all([
+        actResp.json(),
+        schedResp.json()
+      ]);
+
+      // Snapshot old data for comparison
+      var oldActivities = JSON.stringify(window.BD_ACTIVITIES || []);
+      var oldSchedule = JSON.stringify(window.BD_SCHEDULE || []);
+
+      // Rebuild globals
+      window.BD_ACTIVITIES = buildActivities(actData.attractions);
+      window.BD_SCHEDULE   = buildSchedule(schedData.events);
+      window.BD_SCHEDULED_IDS = new Set(
+        (window.BD_SCHEDULE || []).flatMap(function(day) { return day.events; })
+          .filter(function(ev) { return ev.activityId && ev.type !== 'meal' && ev.type !== 'travel'; })
+          .map(function(ev) { return ev.activityId; })
+      );
+
+      // Back-propagate locked state
+      for (var i = 0; i < window.BD_SCHEDULE.length; i++) {
+        var day = window.BD_SCHEDULE[i];
+        for (var j = 0; j < day.events.length; j++) {
+          var event = day.events[j];
+          if (event.type === 'committed-lock' && event.activityId != null) {
+            var activity = window.BD_ACTIVITIES.find(function(a) { return a.id === event.activityId; });
+            if (activity) {
+              activity.locked = true;
+              var rawEvent = schedData.events.find(function(e) { return e.id === event.id; });
+              if (rawEvent && rawEvent.startTime) {
+                var travelMins = rawEvent.travelMinutes || 0;
+                activity.departure = formatTime12h(rawEvent.startTime);
+                activity.lockedStatus = 'Show ' + formatTime12h(addMinutes(rawEvent.startTime, travelMins));
+              }
+            }
+          }
+        }
+      }
+
+      // Re-hydrate Supabase picks
+      if (window.BD_SUPABASE) {
+        try {
+          var result = await window.BD_SUPABASE
+            .from('picks')
+            .select('user_id, slug, state');
+          hydratePicks(result.data || []);
+        } catch (e) {
+          console.warn('Supabase unavailable during refresh:', e);
+        }
+      }
+
+      // Check if data actually changed
+      var newActivities = JSON.stringify(window.BD_ACTIVITIES);
+      var newSchedule = JSON.stringify(window.BD_SCHEDULE);
+      var changed = oldActivities !== newActivities || oldSchedule !== newSchedule;
+
+      return { success: true, changed: changed };
+    } catch (e) {
+      console.error('Data refresh failed:', e);
+      return { success: false, changed: false, error: e.message };
+    }
+  };
 
   boot();
 })();
