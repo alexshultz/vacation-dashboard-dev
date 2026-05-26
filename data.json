@@ -4049,6 +4049,50 @@
       "visible": true
     },
     {
+      "slug": "dicks-5-and-10",
+      "name": "Dick's 5 & 10",
+      "category": "attraction",
+      "price_adult": null,
+      "duration_hours": 1,
+      "rating": 4.7,
+      "description": "A Branson institution since 1952 -- the last great American Five and Dime. Dick's sprawls across a full city block on West Main Street and packs in over 50,000 items: old-fashioned candy by the pound, a soda pop shoppe, toys, novelties, souvenirs, crafts, books, sports gear, hardware oddities, and enough nostalgia to slow everybody down for an hour. The Candy Emporium and Soda Pop Shoppe alone are worth the stop. Cash-register chaos, narrow aisles, and absolutely nothing like a modern retail store -- in the best possible way.",
+      "image": "assets/thumbs/dicks-5-and-10-thumb.jpg",
+      "official_url": "https://www.dicks5and10.com",
+      "notes": "103 W Main St, Branson MO 65616. Phone: 417-323-6372. About 24 min from Watermill Cove. Open daily -- call ahead for hours. Cash and card accepted.",
+      "tags": [
+        "family",
+        "kid-focused",
+        "indoor",
+        "relaxed",
+        "shopping",
+        "1-2hr"
+      ],
+      "tag_meta": {
+        "vocabulary_round": 8,
+        "classifier": "claude-sonnet-4-6",
+        "confidence": 0.9,
+        "reasoning": "Classic five-and-dime retail store, family and kid-friendly, indoor shopping, relaxed pace, 1 hour typical visit.",
+        "categories": {
+          "show": [],
+          "music": [],
+          "audience": [
+            "family",
+            "kid-focused"
+          ],
+          "attraction": [
+            "indoor",
+            "relaxed",
+            "shopping",
+            "1-2hr"
+          ]
+        },
+        "classified": "2026-05-25"
+      },
+      "drive": "24 min",
+      "sort_key": "dick's 5 & 10",
+      "visible": true
+    },
+    {
       "slug": "dickerson-park-zoo",
       "name": "Dickerson Park Zoo",
       "category": "attraction",
