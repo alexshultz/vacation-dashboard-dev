@@ -172,13 +172,14 @@
       "duration": 1.5,
       "catalogRef": "guy-fieris-kitchen-bar",
       "startTime": "12:00",
-      "travelMinutes": 24,
+      "travelMinutes": 30,
       "interested": [],
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
       "event_type": "open",
-      "series_slug": "lunch"
+      "series_slug": "lunch",
+      "sub": "Leave 11:30 -- 30 min drive"
     },
     {
       "id": "lun-27",
