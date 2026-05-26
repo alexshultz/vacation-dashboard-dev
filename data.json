@@ -11910,10 +11910,10 @@
       "price_adult": null,
       "duration_hours": 2,
       "rating": 4.5,
-      "description": "Truth Traveler is an immersive virtual reality experience in Branson that takes visitors through key scenes from biblical history using high-quality VR headsets and theatrical elements. Designed for faith-oriented families who want an educational and visually engaging way to explore Bible stories. Best suited for older children and adults -- younger kids may find the VR format overwhelming.",
+      "description": "Branson's newest attraction -- a 5D virtual reality time-travel experience through biblical history at the former Andy Williams Moon River Theatre. Climb into a motion capsule with VR headset and journey from the Garden of Eden through Noah's Flood, the Tower of Babel, the Nativity, and Christ's resurrection and ascension. Guided by characters Inventor, P.O.D. (a wisecracking robot), and Rae. Also includes a live Truth Traveler Theater show, gift shop (Timeless Treats), and snack area. Faith-oriented but spectacular for anyone who loves immersive rides. Each ticket is valid for 3 consecutive days -- you can come back.",
       "image": "assets/thumbs/truth-traveler-thumb.jpg",
-      "official_url": "https://www.branson.com/attractions/truth-traveler/",
-      "notes": "Check branson.com or the venue for current hours, pricing, and minimum age recommendations. Not recommended for guests prone to motion sickness.",
+      "official_url": "https://truthtraveler.com/branson",
+      "notes": "1 Andy Williams Blvd, Branson MO 65616 (former Andy Williams Moon River Theatre). Phone: (417) 334-4500. Hours: Mon-Sat 9am-6pm, Sun 10am-5pm. Tickets valid 3 days -- Experience Pack available. About 26 min from Watermill Cove. Purchase tickets at door or in advance online.",
       "tags": [
         "1-2hr",
         "educational",
@@ -11943,7 +11943,7 @@
         },
         "classified": "2026-04-21"
       },
-      "drive": "19 min",
+      "drive": "26 min",
       "sort_key": "truth traveler",
       "visible": true
     },
