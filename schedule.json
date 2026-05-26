@@ -457,6 +457,22 @@
       "event_type": "open",
       "series_slug": null,
       "sub": "Alfred Hitchcock · Media room at the lodge"
+    },
+    {
+      "id": "dicks-5-and-10-may26",
+      "title": "Dick's 5 & 10",
+      "date": "2026-05-26",
+      "duration": 1,
+      "catalogRef": "dicks-5-and-10",
+      "startTime": "10:30",
+      "travelMinutes": 30,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 10:00 -- 24 min drive to downtown Branson"
     }
   ]
 }
