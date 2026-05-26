@@ -4049,6 +4049,26 @@
       "visible": true
     },
     {
+      "slug": "dicks-5-and-10",
+      "name": "Dick's 5 & 10",
+      "category": "shopping",
+      "duration_hours": 1,
+      "price_adult": 0,
+      "rating": 4.7,
+      "description": "Dick's 5 & 10 is a beloved Branson institution -- a nostalgic five-and-dime variety store packed floor to ceiling with souvenirs, novelties, candy, toys, and Ozark keepsakes. Operating since 1960 on the Branson Strip, it's a must-stop for the quirky, the kitschy, and the charming. Kids and adults alike love browsing the densely packed shelves.",
+      "official_url": "https://www.dicks5and10.com/",
+      "notes": "Located on the Branson Strip (76 Country Blvd). Cash and card accepted. Free to browse -- budget time for lingering.",
+      "tags": [
+        "shopping",
+        "family",
+        "indoor",
+        "1-2hr"
+      ],
+      "drive": "30 min",
+      "sort_key": "dick's 5 & 10",
+      "visible": true
+    },
+    {
       "slug": "dickerson-park-zoo",
       "name": "Dickerson Park Zoo",
       "category": "attraction",
@@ -5695,6 +5715,26 @@
       "drive": "2h 24min",
       "sort_key": "gusano's chicago style pizzeria (dickson st)",
       "visible": false
+    },
+    {
+      "slug": "guy-fieris-kitchen-bar",
+      "name": "Guy Fieri's Kitchen + Bar",
+      "category": "restaurant",
+      "duration_hours": 1.5,
+      "price_adult": 25,
+      "rating": 4.4,
+      "description": "Guy Fieri's Kitchen + Bar at Branson Landing brings the Food Network star's bold, over-the-top comfort food to the Ozarks. Known for big burgers, loaded nachos, craft cocktails, and signature Triple D dishes. Lively atmosphere with a full bar -- great for a fun group lunch or dinner.",
+      "official_url": "https://www.bransonlanding.com/directory/guy-fieris-kitchen-bar/",
+      "notes": "Located at Branson Landing. Check current hours before visiting. Can get busy during peak times -- arrive early or expect a wait.",
+      "tags": [
+        "dining",
+        "family",
+        "indoor",
+        "1-2hr"
+      ],
+      "drive": "24 min",
+      "sort_key": "guy fieri's kitchen + bar",
+      "visible": true
     },
     {
       "slug": "branson-landing-h-and-m",
