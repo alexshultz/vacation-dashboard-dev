@@ -6512,6 +6512,27 @@
       "visible": true
     },
     {
+      "slug": "joes-crab-shack",
+      "name": "Joe's Crab Shack",
+      "category": "restaurant",
+      "duration_hours": 1.5,
+      "price_adult": 22,
+      "rating": 4.1,
+      "description": "Joe's Crab Shack at Branson Landing is a festive waterfront seafood restaurant known for steampots, crab legs, shrimp, and a lively beach-party atmosphere. Outdoor and indoor seating with views of Lake Taneycomo. A fun, casual option for a group seafood lunch or dinner.",
+      "official_url": "https://www.bransonlanding.com/directory/joes-crab-shack/",
+      "notes": "Located at Branson Landing on the waterfront. Check current hours -- busy during summer season. Good for large groups.",
+      "tags": [
+        "dining",
+        "family",
+        "indoor",
+        "outdoor",
+        "1-2hr"
+      ],
+      "drive": "24 min",
+      "sort_key": "joe's crab shack",
+      "visible": true
+    },
+    {
       "slug": "josh-turner",
       "name": "Josh Turner",
       "category": "show",
@@ -9240,6 +9261,26 @@
       },
       "drive": "19 min",
       "sort_key": "re-vibe dinner show",
+      "visible": true
+    },
+    {
+      "slug": "rear-window-1954",
+      "name": "Rear Window (1954)",
+      "category": "entertainment",
+      "duration_hours": 2,
+      "price_adult": 0,
+      "rating": 4.9,
+      "description": "Alfred Hitchcock's Rear Window (1954) is one of the greatest films ever made. L.B. Jefferies, a photographer confined to a wheelchair, becomes convinced he has witnessed a murder through the rear windows of his Greenwich Village apartment. Starring James Stewart and Grace Kelly. A masterclass in suspense and voyeurism -- perfect for a family movie night.",
+      "official_url": "https://www.imdb.com/title/tt0047396/",
+      "notes": "Screening in the media room at the lodge. No admission cost. Runtime approximately 112 minutes.",
+      "tags": [
+        "entertainment",
+        "indoor",
+        "family",
+        "1-2hr"
+      ],
+      "drive": "0 min",
+      "sort_key": "rear window (1954)",
       "visible": true
     },
     {
