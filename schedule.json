@@ -473,6 +473,22 @@
       "event_type": "open",
       "series_slug": null,
       "sub": "Leave 10:00 -- 24 min drive to downtown Branson"
+    },
+    {
+      "id": "fritz-adventure-may26",
+      "title": "Fritz's Adventure",
+      "date": "2026-05-26",
+      "duration": 1.5,
+      "catalogRef": "fritz-s-adventure",
+      "startTime": "14:00",
+      "travelMinutes": 30,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 1:30 -- 30 min drive"
     }
   ]
 }
