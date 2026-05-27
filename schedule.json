@@ -652,6 +652,22 @@
       "event_type": "committed-lock",
       "series_slug": null,
       "sub": "Leave 1:30 -- 30 min drive"
+    },
+    {
+      "id": "crescent-hotel-ghost-tour-may28",
+      "title": "1886 Crescent Hotel Ghost Tour",
+      "date": "2026-05-28",
+      "duration": 1,
+      "catalogRef": "crescent-hotel-ghost-tour",
+      "startTime": "17:30",
+      "travelMinutes": 101,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 3:49 · 1h 26min drive · Tour 5:30 · Ends ~6:30"
     }
   ]
 }
