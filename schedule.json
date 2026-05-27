@@ -385,7 +385,7 @@
       "date": "2026-05-28",
       "duration": 1.5,
       "catalogRef": "ripley-s-believe-it-or-not",
-      "startTime": "10:00",
+      "startTime": "20:00",
       "travelMinutes": 26,
       "interested": [],
       "undecided": [],
@@ -393,7 +393,7 @@
       "noResponse": [],
       "event_type": "open",
       "series_slug": null,
-      "sub": "Leave 9:30 -- 26 min drive"
+      "sub": "Leave 7:40 -- 26 min drive"
     },
     {
       "id": "family-fun-track-may27",
