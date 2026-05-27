@@ -428,6 +428,22 @@
       "sub": "Leave 11:40 -- 17 min drive"
     },
     {
+      "id": "wonderworks-may28",
+      "title": "WonderWorks",
+      "date": "2026-05-28",
+      "duration": 2,
+      "catalogRef": "wonderworks",
+      "startTime": "14:00",
+      "travelMinutes": 19,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 1:40 -- 19 min drive"
+    },
+    {
       "id": "dinosaur-museum-may28",
       "title": "Branson Dinosaur Museum",
       "date": "2026-05-28",
