@@ -668,6 +668,21 @@
       "event_type": "open",
       "series_slug": null,
       "sub": "Leave 3:49 · 1h 26min drive · Tour 5:30 · Ends ~6:30"
+    },
+    {
+      "id": "eureka-springs-dinner-train-lock",
+      "title": "Eureka Springs Dinner Train",
+      "date": "2026-05-21",
+      "duration": 0,
+      "catalogRef": "eureka-springs-dinner-train",
+      "startTime": "12:00",
+      "travelMinutes": 0,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "committed-lock",
+      "series_slug": null
     }
   ]
 }
