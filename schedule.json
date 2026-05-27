@@ -508,6 +508,22 @@
       "sub": "Leave 6:45 · Show 7:30 · Ends ~9:50"
     },
     {
+      "id": "butterfly-palace-may25",
+      "title": "Butterfly Palace & Rainforest Adventure",
+      "date": "2026-05-25",
+      "duration": 2,
+      "catalogRef": "butterfly-palace-rainforest-adventure",
+      "startTime": "15:00",
+      "travelMinutes": 16,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 2:40 -- 16 min drive"
+    },
+    {
       "id": "dogwood-canyon-may25",
       "title": "Dogwood Canyon Nature Park",
       "date": "2026-05-25",
