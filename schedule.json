@@ -476,9 +476,9 @@
       "sub": "Leave 1:35 -- 23 min drive"
     },
     {
-      "id": "man-overboard-may27",
-      "title": "Escape Code: Man Overboard!",
-      "date": "2026-05-27",
+"id": "man-overboard-may27",
+    "title": "Escape Code: Man Overboard!",
+    "event_type": "committed-lock"
       "duration": 1,
       "catalogRef": "escape-code-man-overboard",
       "startTime": "15:15",
