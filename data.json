@@ -330,6 +330,30 @@
       "visible": true
     },
     {
+      "slug": "airo-helicopter-tours",
+      "name": "AIRO Helicopter Tours",
+      "category": "attraction",
+      "duration_hours": 0.5,
+      "price_adult": 35,
+      "rating": 4.8,
+      "description": "Branson's premier helicopter tour operator with multiple scenic routes over Table Rock Lake, Silver Dollar City, and the 76 Strip. Tours range from the short Intro Experience (from $35) to the Deluxe Tour covering the full Branson area. Max 3 passengers per flight; combined weight limit 550 lbs. Book in advance -- tours fill fast.",
+      "address": "Branson, MO",
+      "official_url": "https://www.iflyairo.com/branson-helicopter-tours",
+      "tags": [
+        "outdoor",
+        "aerial",
+        "unique-experience",
+        "scenic",
+        "family"
+      ],
+      "duration_tags": [
+        "30min"
+      ],
+      "drive": "20 min",
+      "sort_key": "airo helicopter tours",
+      "visible": true
+    },
+    {
       "slug": "america-s-top-country-hits",
       "name": "America's Top Country Hits",
       "category": "family",
