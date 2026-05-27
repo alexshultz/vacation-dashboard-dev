@@ -476,6 +476,23 @@
       "sub": "Leave 1:35 -- 23 min drive"
     },
     {
+      "id": "man-overboard-may27",
+      "title": "Escape Code: Man Overboard!",
+      "date": "2026-05-27",
+      "duration": 1,
+      "catalogRef": "escape-code-man-overboard",
+      "startTime": "15:15",
+      "travelMinutes": 18,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 2:55 -- 18 min drive",
+      "committed": ["zach", "josh", "tayden", "ashlyn"]
+    },
+    {
       "id": "shepherd-hills-adventure-may27",
       "title": "Shepherd of the Hills Adventure Park",
       "date": "2026-05-27",
