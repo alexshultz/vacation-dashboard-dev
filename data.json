@@ -5188,6 +5188,27 @@
       "visible": true
     },
     {
+      "slug": "fun-mountain-big-cedar-thunder-alley",
+      "name": "Fun Mountain at Big Cedar -- Thunder Alley",
+      "category": "attraction",
+      "duration_hours": 2,
+      "price_adult": 10,
+      "rating": 4.4,
+      "description": "Big Cedar Lodge's family fun center in Ridgedale with Thunder Alley -- a quarter-mile outdoor go-kart track overlooking Table Rock Lake with NASCAR-themed karts designed by Martin Truex Jr. and Cole Pearn. Also has arcade games, bowling, ropes course, zipline, laser tag, food, and bar. Best as an add-on to a Big Cedar or Top of the Rock outing. $10/ride, drivers 10+ and 56\" tall or younger riders 5+ with adult.",
+      "official_url": "https://bigcedar.com/activity/go-carts-branson-mo/",
+      "notes": "Seasonal and weather-dependent -- reopens March, runs first-come first-served. Open to public, not just resort guests. Pairs well with Top of the Rock. Max weight 300 lbs per cart.",
+      "tags": [
+        "active",
+        "family",
+        "outdoor",
+        "thrill",
+        "1-2hr"
+      ],
+      "drive": "30 min",
+      "sort_key": "fun mountain at big cedar -- thunder alley",
+      "visible": true
+    },
+    {
       "slug": "tanger-gap",
       "name": "Gap Factory (Tanger Outlets)",
       "category": "attraction",
@@ -5571,6 +5592,27 @@
       },
       "drive": "19 min",
       "sort_key": "golden sounds of the platters",
+      "visible": true
+    },
+    {
+      "slug": "grand-country-fun-spot",
+      "name": "Grand Country Fun Spot",
+      "category": "attraction",
+      "duration_hours": 2,
+      "price_adult": 10,
+      "rating": 4.3,
+      "description": "Indoor amusement center on Highway 76 with year-round attractions including the Mountain Ridge Racer -- a multilevel 525-foot winding indoor go-kart track with all-electric karts and an Ozark-themed course. Also has laser tag, mini-golf, arcade, bumper cars, and bowling. The best bad-weather or rainy-day option. Single riders $9.95, double karts $11.49.",
+      "official_url": "https://grandcountry.com/fun-spot/",
+      "notes": "Indoor -- fully weather-proof. Single kart drivers must be 10+ and 58\" tall. Double kart drivers 18+ and 60\" tall, passengers 4+ and 40\" tall.",
+      "tags": [
+        "active",
+        "family",
+        "indoor",
+        "thrill",
+        "1-2hr"
+      ],
+      "drive": "22 min",
+      "sort_key": "grand country fun spot",
       "visible": true
     },
     {
@@ -11768,6 +11810,27 @@
       "visible": false
     },
     {
+      "slug": "the-track-family-fun-parks",
+      "name": "The Track Family Fun Parks",
+      "category": "attraction",
+      "duration_hours": 2,
+      "price_adult": 15,
+      "rating": 4.5,
+      "description": "Branson's biggest go-kart operator with multiple locations on Highway 76. Multiple track styles including the High Rise, Wild Woody, and LumberJack plus bumper boats, laser tag, bumper cars, mini-golf, arcades, and kiddie rides. The best all-around pick for a mixed-age group that wants variety beyond just racing.",
+      "official_url": "https://bransontracks.com/",
+      "notes": "Multiple locations on the 76 corridor -- check which location before heading out. Pricing varies by attraction and package.",
+      "tags": [
+        "active",
+        "family",
+        "outdoor",
+        "thrill",
+        "1-2hr"
+      ],
+      "drive": "22 min",
+      "sort_key": "track family fun parks",
+      "visible": true
+    },
+    {
       "slug": "tracy-byrd",
       "name": "Tracy Byrd",
       "category": "show",
@@ -12596,6 +12659,27 @@
       },
       "drive": "19 min",
       "sort_key": "world's largest toy museum complex",
+      "visible": true
+    },
+    {
+      "slug": "xtreme-racing-center-branson",
+      "name": "Xtreme Racing Center of Branson",
+      "category": "attraction",
+      "duration_hours": 1,
+      "price_adult": 25,
+      "rating": 4.6,
+      "description": "Branson's high-speed go-kart experience on West Highway 76. Features a 3,500-foot concrete raceway -- the longest high-speed racing kart track in North America -- with Sodi racing karts hitting up to 40 mph. Built for teens and adults who want real racing, not amusement-park looping. Minimum age 12, height 58 inches for main high-speed karts.",
+      "official_url": "https://xtreme-branson.com/",
+      "notes": "Best for older kids, teens, and adults. Check height/age requirements before bringing younger kids -- the main track has strict minimums.",
+      "tags": [
+        "active",
+        "family",
+        "outdoor",
+        "thrill",
+        "1-2hr"
+      ],
+      "drive": "22 min",
+      "sort_key": "xtreme racing center of branson",
       "visible": true
     },
     {
