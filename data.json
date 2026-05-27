@@ -5202,7 +5202,9 @@
         "family",
         "outdoor",
         "thrill",
-        "1-2hr"
+        "1-2hr",
+        "go-karts",
+        "go-carts"
       ],
       "drive": "30 min",
       "sort_key": "fun mountain at big cedar -- thunder alley",
@@ -5609,7 +5611,9 @@
         "family",
         "indoor",
         "thrill",
-        "1-2hr"
+        "1-2hr",
+        "go-karts",
+        "go-carts"
       ],
       "drive": "22 min",
       "sort_key": "grand country fun spot",
@@ -11824,7 +11828,9 @@
         "family",
         "outdoor",
         "thrill",
-        "1-2hr"
+        "1-2hr",
+        "go-karts",
+        "go-carts"
       ],
       "drive": "22 min",
       "sort_key": "track family fun parks",
@@ -12676,7 +12682,9 @@
         "family",
         "outdoor",
         "thrill",
-        "1-2hr"
+        "1-2hr",
+        "go-karts",
+        "go-carts"
       ],
       "drive": "22 min",
       "sort_key": "xtreme racing center of branson",
