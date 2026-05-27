@@ -412,6 +412,22 @@
       "sub": "Leave 1:40 -- 20 min drive"
     },
     {
+      "id": "pasghettis-lunch-may28",
+      "title": "Lunch -- Pasghetti's",
+      "date": "2026-05-28",
+      "duration": 1.5,
+      "catalogRef": "pasghettis",
+      "startTime": "12:00",
+      "travelMinutes": 17,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": "lunch",
+      "sub": "Leave 11:40 -- 17 min drive"
+    },
+    {
       "id": "dinosaur-museum-may28",
       "title": "Branson Dinosaur Museum",
       "date": "2026-05-28",

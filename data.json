@@ -8603,6 +8603,26 @@
       "visible": true
     },
     {
+      "slug": "pasghettis",
+      "name": "Pasghetti's",
+      "category": "restaurant",
+      "duration_hours": 1.5,
+      "price_adult": 15,
+      "rating": 4.6,
+      "description": "Branson's best Italian restaurant -- a full city block of themed dining rooms (7 total) built inside a giant indoor \"street\", with an arcade, Ferris wheel, and the famous giant meatball out front. Pastas, steampots, kids menu, cocktails. Open daily 11am to close.",
+      "official_url": "https://www.pasghettis.com",
+      "notes": "3129 W Hwy 76 Country Blvd, Branson MO. Open 7 days, 11am to close. Reservations recommended for groups of 20+. Unique themed rooms: The Boulevard, Miller's Garage, Babette's Supper Club, The Violet Room, The Trolley, The Warehouse, The Speakeasy.",
+      "tags": [
+        "dining",
+        "family",
+        "indoor",
+        "1-2hr"
+      ],
+      "drive": "17 min",
+      "sort_key": "pasghetti's",
+      "visible": true
+    },
+    {
       "slug": "patsy-to-patsy",
       "name": "Patsy to Patsy",
       "category": "show",
