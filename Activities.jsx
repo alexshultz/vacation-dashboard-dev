@@ -418,8 +418,9 @@ function TrendingView({ state, dispatch }) {
       .sort((x, y) => y.score - x.score);
   }, [state._tick]);
 
-  const heating = ranked.filter(x => !x.a.locked).slice(0, 3);
-  const onBubble = all.filter(isOnBubble);
+  const scheduled = window.BD_SCHEDULED_IDS || new Set();
+  const heating = ranked.filter(x => !x.a.locked && !scheduled.has(x.a.id)).slice(0, 3);
+  const onBubble = all.filter(a => isOnBubble(a) && !scheduled.has(a.id));
   const lockedIn = all.filter(a => a.locked);
 
   const totalInteresting = ranked.length;
