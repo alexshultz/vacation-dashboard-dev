@@ -476,9 +476,10 @@
       "sub": "Leave 1:35 -- 23 min drive"
     },
     {
-"id": "man-overboard-may27",
-    "title": "Escape Code: Man Overboard!",
-    "event_type": "committed-lock"
+      "id": "man-overboard-may27",
+      "title": "Escape Code: Man Overboard!",
+      "date": "2026-05-27",
+      "event_type": "committed-lock",
       "duration": 1,
       "catalogRef": "escape-code-man-overboard",
       "startTime": "15:15",
@@ -487,7 +488,6 @@
       "undecided": [],
       "notInterested": [],
       "noResponse": [],
-      "event_type": "open",
       "series_slug": null,
       "sub": "Leave 2:40 -- 18 min drive · arrive 15 min early",
       "committed": ["zach", "josh", "tayden", "ashlyn"]
