@@ -446,10 +446,10 @@
     {
       "id": "dinosaur-museum-may28",
       "title": "Branson Dinosaur Museum",
-      "date": "2026-05-28",
+      "date": "2026-05-27",
       "duration": 2,
       "catalogRef": "branson-dinosaur-museum",
-      "startTime": "14:00",
+      "startTime": "10:00",
       "travelMinutes": 19,
       "interested": [],
       "undecided": [],
@@ -457,7 +457,7 @@
       "noResponse": [],
       "event_type": "open",
       "series_slug": null,
-      "sub": "Leave 1:40 -- 19 min drive"
+      "sub": "Leave 9:40 -- 19 min drive"
     },
     {
       "id": "truth-traveler-may27",
