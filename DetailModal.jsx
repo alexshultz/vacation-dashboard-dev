@@ -243,6 +243,16 @@ function PaneContent({ activity, userId, onClose, onToggleWish, onToggleCommit }
         <div className="dm-meta">{activity.drive} drive · {activity.price} · ★ {activity.rating}</div>
         <StatusLine activity={activity} committed={c} />
         <p className="dm-desc">{activity.hook}</p>
+        {activity.official_url && activity.official_url.trim() !== "" && (
+          <a
+            href={activity.official_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="dm-link"
+          >
+            Visit Website
+          </a>
+        )}
         {activity.tags && activity.tags.length > 0 && (
           <div className="dm-tags">
             {activity.tags.map(t => <span key={t} className="dm-tag">{t}</span>)}

@@ -364,6 +364,22 @@
       "series_slug": null
     },
     {
+      "id": "7d-adventure-may27",
+      "title": "7D Dark Ride Adventure",
+      "date": "2026-05-27",
+      "duration": 2,
+      "catalogRef": "7d-dark-ride-adventure",
+      "startTime": "10:00",
+      "travelMinutes": 26,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 9:30 -- 26 min drive"
+    },
+    {
       "id": "ripleys-may27",
       "title": "Ripley's Believe It or Not",
       "date": "2026-05-27",

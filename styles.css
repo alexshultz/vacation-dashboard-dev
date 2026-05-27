@@ -262,6 +262,16 @@ body {
 }
 .dm-meta { font-family: var(--font-body); font-size: 14px; color: var(--color-ink); opacity: 0.78; }
 .dm-desc { font-family: var(--font-body); font-size: 16px; line-height: 1.55; margin: 0; color: var(--color-ink); }
+.dm-link {
+  font-family: var(--font-body); font-size: 15px; line-height: 1.5;
+  color: var(--moss-on-surface);
+  text-decoration: underline;
+  transition: color var(--dur-fast), opacity var(--dur-fast);
+}
+.dm-link:hover {
+  color: var(--moss-on-surface);
+  opacity: 0.8;
+}
 
 .dm-tags { display: flex; gap: 6px; flex-wrap: wrap; }
 .dm-tag {

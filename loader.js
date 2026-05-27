@@ -56,17 +56,18 @@
       .filter(function (a) { return a.visible === true; })
       .map(function (a) {
         return {
-          id:      a.slug,
-          name:    a.name,
-          hook:    firstSentence(a.description),
-          tags:    a.tags || [],
-          drive:   a.drive || '15 min',
-          price:   priceTier(a.price_adult),
-          rating:  a.rating,
-          thumb:   a.image || ('assets/thumbs/' + a.slug + '-thumb.jpg'),
-          wish:    [],
-          commit:  [],
-          locked:  false
+          id:          a.slug,
+          name:        a.name,
+          hook:        firstSentence(a.description),
+          tags:        a.tags || [],
+          drive:       a.drive || '15 min',
+          price:       priceTier(a.price_adult),
+          rating:      a.rating,
+          thumb:       a.image || ('assets/thumbs/' + a.slug + '-thumb.jpg'),
+          official_url: a.official_url || null,
+          wish:        [],
+          commit:      [],
+          locked:      false
         };
       });
   }
