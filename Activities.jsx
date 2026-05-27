@@ -47,7 +47,7 @@ function BrowseView({ state, dispatch }) {
     }
     const q = trimmed.toLowerCase();
     return items.filter(a => {
-      const text = [a.name || '', a.hook || '', a.description || '', ...(a.tags || [])].join(' ').toLowerCase();
+      const text = [a.name || '', a.hook || '', a.description || '', ...(a.tags || []), ...(a.tags || []).map(t => t.replace(/-/g, ' '))].join(' ').toLowerCase();
       return text.includes(q);
     });
   }, [trimmed, items]);
