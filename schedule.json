@@ -444,6 +444,22 @@
       "sub": "Leave 1:35 -- 23 min drive"
     },
     {
+      "id": "shepherd-hills-adventure-may27",
+      "title": "Shepherd of the Hills Adventure Park",
+      "date": "2026-05-27",
+      "duration": 2,
+      "catalogRef": "shepherd-hills-adventure-park",
+      "startTime": "14:00",
+      "travelMinutes": 17,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": [],
+      "event_type": "open",
+      "series_slug": null,
+      "sub": "Leave 1:40 -- 17 min drive"
+    },
+    {
       "id": "david-sight-sound-may27",
       "title": "DAVID (Sight & Sound Theatres)",
       "date": "2026-05-27",
