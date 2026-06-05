@@ -1,7 +1,7 @@
 {
   "last_updated": "2026-04-23",
-  "trip_start": "2026-05-22",
-  "trip_end": "2026-05-29",
+  "trip_start": "2027-05-28",
+  "trip_end": "2027-06-04",
   "note": "Ages verified from Apple Contacts as of May 22, 2026. Birthdates and contact IDs are in data/people.json (private, never deployed).",
   "attendees": [
     {

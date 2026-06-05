@@ -213,7 +213,7 @@ function Shell() {
       <header className="site-header">
         <div className="site-header__inner">
           <a className="logo" href="#" onClick={(e) => { e.preventDefault(); dispatch({ type: 'goto', page: 'home' }); }}>
-            Branson<span className="yr">'26</span>
+            Branson<span className="yr">'27</span>
           </a>
           <nav className="nav" aria-label="Primary">
             {NAV.filter(n => n.id !== 'profile').map(n => (

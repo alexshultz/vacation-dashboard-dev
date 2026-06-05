@@ -28,7 +28,7 @@
   'use strict';
 
   /* ── Constants ───────────────────────────────────────────────────────────── */
-  var SITE_NAME = "Branson \u201926";   /* Branson '26 — U+2019 RIGHT SINGLE QUOTATION MARK */
+  var SITE_NAME = "Branson \u201927";   /* Branson '26 — U+2019 RIGHT SINGLE QUOTATION MARK */
   var MODE_KEY    = 'vacdash:v1:mode';
   var USER_KEY    = 'vacdash:v1:user';
   var ADMIN_USERS = ['Alex'];

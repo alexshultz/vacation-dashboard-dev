@@ -36,9 +36,9 @@ function ProfilePage({ state, dispatch }) {
         <h2>Your trip dates</h2>
         <p className="help">When are you arriving and leaving? This drives your timeline and which meals you're counted for.</p>
         <label htmlFor="arrival">Arrival</label>
-        <input type="date" id="arrival" defaultValue="2026-05-22" />
+        <input type="date" id="arrival" defaultValue="2027-05-28" />
         <label htmlFor="departure">Departure</label>
-        <input type="date" id="departure" defaultValue="2026-05-29" />
+        <input type="date" id="departure" defaultValue="2027-06-04" />
       </section>
 
       <section className="profile-section">
