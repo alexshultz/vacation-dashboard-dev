@@ -1,6 +1,21 @@
 {
   "events": [
     {
+      "id": "load-up-2027-05-28",
+      "title": "Load up",
+      "date": "2027-05-28",
+      "startTime": "09:30",
+      "duration": 0.5,
+      "event_type": "open",
+      "catalogRef": null,
+      "travelMinutes": null,
+      "series_slug": null,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": []
+    },
+    {
       "id": "depart-home-2027",
       "title": "Leave for Branson",
       "date": "2027-05-28",
@@ -20,6 +35,21 @@
       "title": "Arrive at WaterMill Cove",
       "date": "2027-05-28",
       "startTime": "17:00",
+      "duration": 0.5,
+      "event_type": "open",
+      "catalogRef": null,
+      "travelMinutes": null,
+      "series_slug": null,
+      "interested": [],
+      "undecided": [],
+      "notInterested": [],
+      "noResponse": []
+    },
+    {
+      "id": "load-up-2027-06-04",
+      "title": "Load up",
+      "date": "2027-06-04",
+      "startTime": "09:30",
       "duration": 0.5,
       "event_type": "open",
       "catalogRef": null,
